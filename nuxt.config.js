@@ -1,4 +1,4 @@
-const AVAILABLE_LANGUAGES = ['it']
+const AVAILABLE_LANGUAGES = ['de']
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -17,10 +17,15 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/css/main.css', '@/assets/css/animations.css'],
+  css: [
+    '@/assets/font/stylesheet.css',
+    '@/assets/css/main.css',
+    '@/assets/css/animations.css',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/google-maps',
     { src: '@/plugins/vue-notification', ssr: false },
     '@/plugins/notify',
   ],
@@ -44,9 +49,9 @@ export default {
   i18n: {
     locales: AVAILABLE_LANGUAGES,
     strategy: 'prefix_except_default',
-    defaultLocale: 'it',
+    defaultLocale: 'de',
     vueI18n: {
-      fallbackLocale: 'it',
+      fallbackLocale: 'de',
       messages: AVAILABLE_LANGUAGES.reduce(
         (obj, key) => ({
           ...obj,

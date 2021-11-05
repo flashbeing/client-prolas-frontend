@@ -1,9 +1,8 @@
 <template>
   <div>
     <Header />
-    <Nuxt class="page" />
+    <nuxt />
     <Footer />
-    <NotificationCenter />
   </div>
 </template>
 
@@ -11,7 +10,7 @@
 html {
   @apply font-sans;
 
-  font-size: 16px;
+  font-size: 18px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
