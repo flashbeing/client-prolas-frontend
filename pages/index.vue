@@ -14,16 +14,24 @@
       />
     </div>
     <SideListWithRightDetails />
+    <div class="container container-small-gap">
+      <ImagesWall />
+      <Location />
+    </div>
   </main>
 </template>
 
 <script>
 import SectionImageText from '@/components/ui/SectionImageText.vue'
 import SideListWithRightDetails from '@/components/ui/SideListWithRightDetails.vue'
+import ImagesWall from '@/components/ui/ImagesWall.vue'
+import Location from '@/components/ui/Location.vue'
 export default {
   components: {
     SectionImageText,
     SideListWithRightDetails,
+    ImagesWall,
+    Location,
   },
 }
 </script>
@@ -35,5 +43,9 @@ main {
 
 .container {
   @apply flex flex-col gap-32 items-center m-auto;
+}
+
+.container-small-gap {
+  @apply gap-12;
 }
 </style>

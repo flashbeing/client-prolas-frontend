@@ -43,6 +43,7 @@ export default {
 
   & > span {
     @apply flex items-center gap-3 text-2xl cursor-pointer;
+
     & > .icon-container {
       @apply flex items-center justify-center w-8 h-8 border-2 border-primary rounded-full;
 
@@ -54,6 +55,13 @@ export default {
       }
 
       &:hover {
+        & > .chevron-big {
+          transform: scaleY(1);
+        }
+      }
+    }
+    &:hover {
+      & > .icon-container {
         & > .chevron-big {
           transform: scaleY(1);
         }

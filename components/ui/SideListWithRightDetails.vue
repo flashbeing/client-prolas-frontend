@@ -13,6 +13,16 @@
             {{ t.name }}
           </li>
         </ul>
+        <div class="unavailable">
+          <span>TruBend 7050 (ab Jahresende)</span>
+          <ul>
+            <li>Biegemaschine</li>
+          </ul>
+          <span>Biegemaschine HAEGER 824 One Touch4e (ab Jahresende)</span>
+          <ul>
+            <li>Einpressmaschine</li>
+          </ul>
+        </div>
       </div>
       <div class="details-container">
         <div class="image-container">
@@ -66,13 +76,25 @@ export default {
   @apply bg-primary py-24;
 }
 
+.unavailable {
+  @apply text-grey pt-6;
+  & > ul {
+    @apply list-disc;
+
+    width: min-content;
+    margin-left: auto;
+  }
+}
+
 .side-list-container {
   @apply flex justify-center m-auto gap-12 text-white;
 
   max-width: 1280px;
 
   & > .side-list {
-    @apply flex-1 text-right;
+    @apply text-right;
+
+    width: 50%;
 
     & > h3 {
       @apply text-4xl pb-12;
@@ -83,7 +105,7 @@ export default {
       & > li {
         @apply py-6 mr-0 cursor-pointer;
 
-        width: max-content;
+        transition: 0.4s;
 
         &:hover,
         &.selected {
@@ -92,6 +114,7 @@ export default {
       }
     }
   }
+
   & > .details-container {
     @apply flex-1;
 
