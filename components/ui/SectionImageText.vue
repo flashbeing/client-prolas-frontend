@@ -74,7 +74,7 @@ export default {
       content: '';
       z-index: -1;
       width: 95%;
-      height: 50%;
+      height: 70%;
     }
   }
 
@@ -110,6 +110,33 @@ export default {
     & > img {
       margin-left: 0;
       margin-right: 10%;
+    }
+  }
+}
+
+@media (max-width: theme('screens.md')) {
+  .section-image-text-container {
+    @apply flex-col px-3;
+  }
+  .reverse {
+    & > .text-container {
+      @apply items-start;
+
+      & > h3,
+      & > p {
+        @apply text-left;
+      }
+
+      & > .accordion {
+        @apply items-start text-left;
+      }
+    }
+
+    & > .image-container {
+      & > img {
+        margin-left: 10%;
+        margin-right: 0;
+      }
     }
   }
 }

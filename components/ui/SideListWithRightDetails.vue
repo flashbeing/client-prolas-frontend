@@ -147,4 +147,28 @@ export default {
     }
   }
 }
+
+@media (max-width: theme('screens.md')) {
+  .side-list-container {
+    @apply flex-col;
+
+    & > .side-list {
+      width: 90%;
+    }
+    & > .details-container {
+      & > ul {
+        @apply pl-16;
+      }
+
+      & > .image-container {
+        & > img {
+          margin-top: 5%;
+          margin-left: 5%;
+          padding-top: 5%;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
 </style>

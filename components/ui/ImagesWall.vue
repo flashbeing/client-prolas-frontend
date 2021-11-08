@@ -46,12 +46,16 @@ export default {
 .image-wall-container {
   @apply flex flex-col gap-3 pb-16 border-b-4 border-primary;
 }
+
 .row {
-  @apply flex gap-3;
+  @apply flex gap-3 flex-wrap;
+  & > img {
+    @apply flex-1;
+  }
 }
 
 .box-container {
-  @apply flex justify-center items-center p-8;
+  @apply flex justify-center items-center flex-1 p-8;
 }
 
 .box-container--blue {

@@ -1,6 +1,19 @@
 <template>
   <header>
-    <div class="center">
+    <div class="header-center">
+      <nav>
+        <ul>
+          <li
+            v-for="(item, index) of menuItemsLeft"
+            :key="index"
+            class="clickable"
+          >
+            <nuxt-link :to="localePath(item.path)" @click.native="hideMenu">
+              {{ item.name }}
+            </nuxt-link>
+          </li>
+        </ul>
+      </nav>
       <nuxt-link
         :to="localePath('/')"
         tag="div"
@@ -9,7 +22,11 @@
       ></nuxt-link>
       <nav>
         <ul>
-          <li v-for="(item, index) of menuItems" :key="index" class="clickable">
+          <li
+            v-for="(item, index) of menuItemsRight"
+            :key="index"
+            class="clickable"
+          >
             <nuxt-link :to="localePath(item.path)" @click.native="hideMenu">
               {{ item.name }}
             </nuxt-link>
@@ -55,7 +72,7 @@ export default {
   },
 
   computed: {
-    menuItems() {
+    menuItemsLeft() {
       return [
         {
           name: this.$t('header.wecan'),
@@ -65,6 +82,10 @@ export default {
           name: this.$t('header.our'),
           path: '/#our',
         },
+      ]
+    },
+    menuItemsRight() {
+      return [
         {
           name: this.$t('header.us'),
           path: '/#us',
@@ -74,6 +95,9 @@ export default {
           path: '/#location',
         },
       ]
+    },
+    menuItems() {
+      return [...this.menuItemsLeft, ...this.menuItemsRight]
     },
   },
 
@@ -97,6 +121,12 @@ header {
   line-height: 60px;
 }
 
+.header-center {
+  width: 970px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .logo {
   @apply inline-block bg-no-repeat;
 
@@ -104,14 +134,12 @@ header {
   height: 30px;
   margin-top: 13px;
   background-image: url(~assets/image/Logo_Prolas.svg?inline);
-  background-position: left center;
+  background-position: center;
   background-size: auto 100%;
 }
 
 nav {
   @apply inline-block text-right align-top;
-
-  width: calc(100% - 250px);
 
   & li {
     @apply inline-block px-6 uppercase text-base;
@@ -128,7 +156,7 @@ nav {
   transition: transform 0.5s ease;
 
   & > .line {
-    @apply bg-white;
+    @apply bg-primary;
 
     height: 2px;
     margin-bottom: 10px;
@@ -198,6 +226,12 @@ nav {
     &.visible {
       @apply opacity-100 pointer-events-auto;
     }
+  }
+  .logo {
+    background-position: left center;
+  }
+  .header-center {
+    text-align: left;
   }
 }
 </style>

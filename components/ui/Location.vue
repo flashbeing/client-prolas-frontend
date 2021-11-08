@@ -64,7 +64,7 @@ export default {
   @apply w-full z-10;
 }
 .map-header {
-  @apply flex justify-between;
+  @apply flex justify-between flex-wrap;
 
   & > .logo {
     max-width: 250px;
