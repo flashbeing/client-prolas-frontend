@@ -5,23 +5,27 @@
         <h3>UNSERE TECHNOLOGIEN</h3>
         <ul>
           <li
-            v-for="(t, i) in tech"
-            :key="'tech' + i"
-            :class="{ selected: i == techSelected }"
-            @click="setTechSelected(i)"
+            v-for="(t, i) in machines"
+            :key="'machine' + i"
+            :class="{ selected: i == machineSelected }"
+            @click="setMachineSelected(i)"
           >
             {{ t.name }}
           </li>
         </ul>
-        <div class="unavailable">
-          <span>TruBend 7050 (ab Jahresende)</span>
-          <ul>
-            <li>Biegemaschine</li>
-          </ul>
-          <span>Biegemaschine HAEGER 824 One Touch4e (ab Jahresende)</span>
-          <ul>
-            <li>Einpressmaschine</li>
-          </ul>
+        <div class="unavailable-container">
+          <div
+            v-for="(t, i) in unavailableMachines"
+            :key="'unmachine' + i"
+            class="unavailable"
+          >
+            <span>{{ t.name }}</span>
+            <ul>
+              <li v-for="d in t.details" :key="'detailsUnMachine' + d">
+                {{ d }}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="details-container">
@@ -40,32 +44,33 @@
 export default {
   data() {
     return {
-      techSelected: 0,
+      machineSelected: 0,
       image: null,
       details: [],
-      tech: [
-        {
-          name: 'TruLaser 2020L',
-          image: 'https://picsum.photos/730/487',
-          details: ['laser', 'max'],
-        },
-        {
-          name: 'TruLaser 3030L',
-          image: 'https://picsum.photos/730/487',
-          details: ['laser', 'alessio'],
-        },
-      ],
     }
   },
+  computed: {
+    machines() {
+      const machines = this.$t('machines')
+      const machinesArray = []
+      for (const name in machines) {
+        machinesArray.push(machines[name])
+      }
+      return machinesArray
+    },
+    unavailableMachines() {
+      return this.$t('unavailableMachines')
+    },
+  },
   created() {
-    this.details = this.tech[this.techSelected].details
-    this.image = this.tech[this.techSelected].image
+    this.details = this.machines[this.machineSelected].details
+    this.image = this.machines[this.machineSelected].image
   },
   methods: {
-    setTechSelected(i) {
-      this.techSelected = i
-      this.details = this.tech[i].details
-      this.image = this.tech[i].image
+    setMachineSelected(i) {
+      this.machineSelected = i
+      this.details = this.machines[i].details
+      this.image = this.machines[i].image
     },
   },
 }
@@ -76,13 +81,17 @@ export default {
   @apply bg-primary py-24;
 }
 
-.unavailable {
-  @apply text-grey pt-6;
-  & > ul {
-    @apply list-disc;
+.unavailable-container {
+  @apply pt-6;
+  & > .unavailable {
+    @apply text-grey;
 
-    width: min-content;
-    margin-left: auto;
+    & > ul {
+      @apply list-disc;
+
+      width: min-content;
+      margin-left: auto;
+    }
   }
 }
 

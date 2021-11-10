@@ -4,9 +4,11 @@
       >{{ title }}
       <span class="icon-container"><ChevronBig class="chevron-big" /></span
     ></span>
-    <p v-if="showContent">
-      {{ content }}
-    </p>
+    <div class="content" :class="{ 'show-content': showContent }">
+      <ul :class="{ rtl: right }">
+        <li v-for="(c, i) in content" :key="i + 'accordionMachine'">{{ c }}</li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -20,8 +22,12 @@ export default {
       required: true,
     },
     content: {
-      type: String,
+      type: Array,
       required: true,
+    },
+    right: {
+      type: Boolean,
+      default: false,
     },
   },
   data() {
@@ -68,5 +74,22 @@ export default {
       }
     }
   }
+
+  & ul {
+    @apply list-disc px-6;
+  }
+}
+.content {
+  @apply opacity-0 pointer-events-none h-0;
+
+  transition: height 1s;
+}
+
+.show-content {
+  @apply opacity-100 pointer-events-auto h-auto;
+}
+
+.rtl {
+  direction: rtl;
 }
 </style>

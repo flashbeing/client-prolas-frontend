@@ -1,19 +1,19 @@
 <template>
   <main>
-    <div class="container">
+    <div class="container container-big-gap">
       <SectionImageText
-        title="CIAO"
-        text="Konzeption und 3D-Konstruktion Wir stehen für Dynamik und Professionalität. Auf Kundenwunsch entwickeln wir optimale Lösungen: CAD-unterstützte Konstruktionen von Bauteilen und Fertigprodukten sowie Optimierung und Anpassungen von bereits existenten Bauteilen und Geometrien sind unser Steckenpferd. Wir leben Innovation."
+        v-for="(step, i) in whatWeDoSteps"
+        :key="step.title"
+        :title="step.title"
+        :text="step.text"
+        :machines="step.machines"
+        :right="Boolean(i % 2)"
         image="https://picsum.photos/624/433"
-      />
-      <SectionImageText
-        title="CIAO"
-        text="Konzeption und 3D-Konstruktion Wir stehen für Dynamik und Professionalität. Auf Kundenwunsch entwickeln wir optimale Lösungen: CAD-unterstützte Konstruktionen von Bauteilen und Fertigprodukten sowie Optimierung und Anpassungen von bereits existenten Bauteilen und Geometrien sind unser Steckenpferd. Wir leben Innovation."
-        image="https://picsum.photos/624/433"
-        right
       />
     </div>
-    <SideListWithRightDetails />
+    <div>
+      <SideListWithRightDetails />
+    </div>
     <div class="container container-small-gap">
       <ImagesWall />
       <Location />
@@ -33,19 +33,40 @@ export default {
     ImagesWall,
     Location,
   },
+  computed: {
+    whatWeDoSteps() {
+      return this.$t('whatWeDo.steps')
+    },
+  },
 }
 </script>
 
 <style lang="postcss" scoped>
 main {
   margin-top: 60px;
+
+  & > div {
+    @apply my-20;
+  }
 }
 
 .container {
-  @apply flex flex-col gap-32 items-center m-auto;
+  @apply flex flex-col gap-32 items-center mx-auto;
 }
 
 .container-small-gap {
   @apply gap-12;
+}
+
+.container-big-gap {
+  @apply gap-48;
+}
+
+@media (max-width: theme('screens.md')) {
+  .container {
+    @apply w-full px-2;
+
+    max-width: 100%;
+  }
 }
 </style>

@@ -75,12 +75,12 @@ export default {
     menuItemsLeft() {
       return [
         {
-          name: this.$t('header.wecan'),
-          path: '/#wecan',
+          name: this.$t('header.whatWeDo'),
+          path: '/#whatWeDo',
         },
         {
-          name: this.$t('header.our'),
-          path: '/#our',
+          name: this.$t('header.ourTech'),
+          path: '/#ourTech',
         },
       ]
     },
@@ -91,8 +91,8 @@ export default {
           path: '/#us',
         },
         {
-          name: this.$t('header.ourlocation'),
-          path: '/#location',
+          name: this.$t('header.ourLocation'),
+          path: '/#ourLocation',
         },
       ]
     },
@@ -122,7 +122,7 @@ header {
 }
 
 .header-center {
-  width: 970px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }

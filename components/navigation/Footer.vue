@@ -7,7 +7,7 @@
 </template>
 <style lang="postcss" scoped>
 footer {
-  @apply flex justify-center flex-wrap gap-32 bg-primary py-32 relative;
+  @apply flex justify-center gap-32 bg-primary py-32 relative;
   & > span {
     @apply flex items-center gap-10 text-xl text-white;
   }
@@ -15,8 +15,14 @@ footer {
     @apply absolute w-full bg-primary;
 
     content: '';
-    height: 20%;
-    top: -20%;
+    height: 60%;
+    top: -60%;
+  }
+}
+
+@media (max-width: theme('screens.md')) {
+  footer {
+    @apply flex-col items-center;
   }
 }
 </style>

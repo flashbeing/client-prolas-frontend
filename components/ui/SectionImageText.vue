@@ -7,10 +7,12 @@
       <h3>{{ title }}</h3>
       <p>{{ text }}</p>
       <Accordion
-        v-if="accordionTitle.length && accordionContent.length"
+        v-for="m in machinesDetails"
+        :key="m.name"
         class="accordion"
-        :title="accordionTitle"
-        :content="accordionContent"
+        :title="m.name"
+        :content="m.description"
+        :right="right"
       />
     </div>
   </div>
@@ -37,14 +39,28 @@ export default {
       type: String,
       default: '',
     },
-    accordionTitle: {
-      type: String,
-      default: 'TITOLO',
+    machines: {
+      type: Array,
+      default() {
+        return []
+      },
     },
-    accordionContent: {
-      type: String,
-      default: 'CONTENT',
-    },
+  },
+  data() {
+    return {
+      machinesDetails: [],
+    }
+  },
+  mounted() {
+    const machinesDescr = this.$t('machines')
+    for (const m of this.machines) {
+      if (machinesDescr[m]) {
+        this.machinesDetails.push({
+          name: m,
+          description: machinesDescr[m].details,
+        })
+      }
+    }
   },
 }
 </script>

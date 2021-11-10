@@ -8,19 +8,21 @@
         >
       </div>
     </div>
-    <gmap-map
-      :center="map.center"
-      :map-type-id="map.mapTypeId"
-      :zoom="12"
-      class="g-map"
-    >
-      <gmap-marker
-        v-for="(marker, index) in mapMarkers"
-        :key="index"
-        :position="marker.position"
-        @click="showPlace(marker.link)"
-      />
-    </gmap-map>
+    <section class="map-ct">
+      <gmap-map
+        :center="map.center"
+        :map-type-id="map.mapTypeId"
+        :zoom="16"
+        class="g-map"
+      >
+        <gmap-marker
+          v-for="(marker, index) in mapMarkers"
+          :key="index"
+          :position="marker.position"
+          @click="showPlace(marker.link)"
+        />
+      </gmap-map>
+    </section>
   </div>
 </template>
 
@@ -61,7 +63,7 @@ export default {
 
 <style lang="postcss" scoped>
 .map-container {
-  @apply w-full z-10;
+  @apply w-full z-10 px-2;
 }
 .map-header {
   @apply flex justify-between flex-wrap;
@@ -72,6 +74,20 @@ export default {
 
   & > .map-header-location {
     @apply flex items-center text-primary text-lg;
+  }
+}
+
+.map-ct {
+  @apply bg-gray-400;
+
+  height: 800px;
+
+  & .g-map {
+    @apply w-full h-full;
+
+    & .vue-map {
+      @apply h-full;
+    }
   }
 }
 </style>

@@ -5,9 +5,12 @@
       <img :src="image" alt="" />
       <div class="box-container box-container--blue">
         <div class="box">
-          <p v-for="(t, i) in whyUsFirst" :key="'whyUsFirst' + i" class="whyus">
-            <span>Präzision:</span> Wir setzen auf Maßgenauigkeit und
-            Pünktlichkeit.
+          <p
+            v-for="(s, i) in strengthsFirst"
+            :key="'strengthsFirst' + i"
+            class="strengths"
+          >
+            <span>{{ s.title }}:</span> {{ s.text }}
           </p>
         </div>
       </div>
@@ -16,12 +19,11 @@
       <div class="box-container box-container--bg-image">
         <div class="box">
           <p
-            v-for="(t, i) in whyUsSecond"
-            :key="'whyUsSecond' + i"
-            class="whyus"
+            v-for="(s, i) in strengthsSecond"
+            :key="'strengthsSecond' + i"
+            class="strengths"
           >
-            <span>Präzision:</span> Wir setzen auf Maßgenauigkeit und
-            Pünktlichkeit.
+            <span>{{ s.title }}:</span> {{ s.text }}
           </p>
         </div>
       </div>
@@ -36,9 +38,15 @@ export default {
     return {
       image: 'https://picsum.photos/1150/569',
       imageBig: 'https://picsum.photos/1739/988',
-      whyUsFirst: [1],
-      whyUsSecond: [1],
     }
+  },
+  computed: {
+    strengthsFirst() {
+      return this.$t('strengths.first')
+    },
+    strengthsSecond() {
+      return this.$t('strengths.second')
+    },
   },
 }
 </script>
@@ -82,10 +90,12 @@ export default {
   backdrop-filter: blur(5px);
 }
 
-.whyus {
-  @apply text-xs;
+.strengths {
+  @apply text-xs py-4;
   & > span {
-    @apply text-lg;
+    @apply text-base;
+
+    line-height: 1.2;
   }
 }
 </style>
