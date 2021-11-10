@@ -1,8 +1,8 @@
 <template>
   <footer>
-    <span>0471 052460</span>
-    <span>laser@prolas.it - info@prolas.it</span>
-    <span>Pec-Adresse: info@pec.prolas.it</span>
+    <span>{{ $t('footer.phone') }}</span>
+    <span>{{ $t('footer.email') }}</span>
+    <span>{{ $t('footer.pec') }}</span>
   </footer>
 </template>
 <style lang="postcss" scoped>

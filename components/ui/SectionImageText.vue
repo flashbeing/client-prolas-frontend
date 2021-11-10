@@ -97,6 +97,8 @@ export default {
   & > .text-container {
     @apply flex flex-col flex-1 gap-4;
 
+    width: 50%;
+
     & > h3 {
       @apply text-4xl text-primary pt-2 pb-2;
     }
@@ -133,6 +135,10 @@ export default {
 @media (max-width: theme('screens.md')) {
   .section-image-text-container {
     @apply flex-col px-3;
+
+    & > .text-container {
+      @apply w-full;
+    }
   }
   .reverse {
     & > .text-container {

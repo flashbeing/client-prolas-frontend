@@ -1,70 +1,70 @@
 {
   "header": {
-    "whatWeDo": "cosa facciamo",
-    "ourTech": "le nostre tecnologie",
-    "us": "chi siamo",
-    "ourLocation": "dove siamo"
+    "whatWeDo": "UNSER KÖNNEN",
+    "ourTech": "UNSERE TECHNOLOGIEN",
+    "us": "WIR",
+    "ourLocation": "UNSER STANDORT"
   },
   "ourValues": {
-    "titles": ["I nostri valori", "La nostra storia"],
+    "titles": ["UNSERE WERTE", "UNSERE GESCHICHTE"],
     "descriptions": [
-      "La nostra azienda familiare nasce nel 1964, passando il testimone da generazione in generazione è arrivata fino ad oggi. Il segreto del nostro successo risiede nella ricerca di soluzione solide precise e concrete nel campo della lavorazione dei metalli.",
-      "Il 1990 segna un anno di grande riorganizzazione per l’azienda: i fratelli Lageder ereditano il testimone dal papà, lavorando fianco a fianco fino al 2020: qui la decisone di dividere le competenze e quindi la nascita di ProLas Srl. "
+      "Unser generationenüberschreitender Familienbetrieb setzt seit der Gründung im Jahre 1964 auf solide Lösungen mit maximaler Präzision im Bereich Metallverarbeitung.",
+      "Nach Übernahme und Neuausrichtung durch die Gebrüder Lageder 1990, erfolgte im Jahre 2020 die Abspaltung des Bereichs Blechverarbeitung mit Gründung der ProLas GmbH."
     ]
   },
   "whatWeDo": {
-    "subtitle": "Amiamo le sfide e le affrontiamo con un lavoro di grande precisione e qualità.",
+    "subtitle": "Wir lieben Herausforderungen und meistern diese mit hochwertiger Präzisionsarbeit.",
     "steps": [
       {
-        "title": "Concetto e design 3D",
-        "text": "Siamo sinonimo di dinamismo e professionalità.Sviluppiamo soluzioni ottimali su richiesta del cliente: progettiamo con supporto CAD componenti e prodotti finiti, ma ci occupiamo anche dell’ottimizzazione e dell'adattamento di componenti e geometrie esistenti. Viviamo giorno dopo giorno l'innovazione."
+        "title": "Konzeption und 3D-Konstruktion",
+        "text": "Wir stehen für Dynamik und Professionalität. Auf Kundenwunsch entwickeln wir optimale Lösungen: CAD-unterstützte Konstruktionen von Bauteilen und Fertigprodukten sowie Optimierung und Anpassungen von bereits existenten Bauteilen und Geometrien sind unser Steckenpferd. Wir leben Innovation."
       },
       {
-        "title": "Produzione di prototipi",
-        "text": "In questa fase, ci occupiamo di assistere il cliente nello sviluppo dei prototipi e della successiva fase di produzione. Nei nostri compiti rientra anche l'ottimizzazione del processo di produzione per quanto riguarda la produzione in serie. "
+        "title": "Prototypenfertigung",
+        "text": "In dieser Phase unterstützen wir den Kunden bei der Entwicklung bzw. Weiterentwicklung von Prototypen und deren Fertigung, inklusive der Optimierung des Fertigungsprozesses im Hinblick auf die Serienfertigung. "
       },
       {
-        "title": "Taglio laser 2D",
-        "text": "Il sistema di taglio laser CO2 mantiene ciò che promette: alta precisione, velocità nella produzione e bordi con taglio netto e preciso anche impiegando materiali di grande spessore. ",
+        "title": "2D-Laserschneiden",
+        "text": "Die CO2-Laserschneidanlage hält was sie verspricht: Hohe Präzision, schnelle Fertigung und saubere Schnittkanten auch bei dicken Materialien.",
         "machines": ["TruLaser 3030L"]
       },
       {
-        "title": "Piegatura",
-        "text": "Questo servizio comprende la piegatura di prodotti semplici e complessi. Precisione garantita su tutta la linea, fino ai decimi di millimetro.",
+        "title": "Biegen",
+        "text": "Diese Leistung beinhaltet das Abkanten sowie Falzen von einfachen und komplexen Biegeteilen. Präzision auf ganzer Linie bis hin in den Zehntel-Bereich.",
         "machines": ["TrumaBend V130", "TruBend 5320", "TruBend 7050"]
       },
       {
-        "title": "Saldatura laser",
-        "text": "La saldatura laser con l'uso di robot è più precisa della saldatura tradizionale: l'efficienza dovuta all'aumento della velocità di saldatura, la precisione dimensionale dovuta al basso apporto di calore e all'esatta chiusura del gap così come il risparmio dovuto all'assenza di rilavorazione sono il nostro pane quotidiano, sono elementi di estrema precisione che rendono le nostre lavorazioni uniche ed inimitabili.",
+        "title": "Laserschweißen",
+        "text": "Das Laserschweißen mittels Roboter überzeugt gegenüber dem traditionellen Verfahren: Effizienz durch Erhöhung der Schweißgeschwindigkeit, Maßgenauigkeit durch geringen Wärmeeintrag und exakter Spaltüberbrückung, sowie Einsparung durch ausbleibende Nachbearbeitung.",
         "machines": ["TruLaser Weld 5000"]
       },
       {
-        "title": "Saldatura",
-        "text": "Anche il processo tradizionale di giunzione permanente viene eseguito manualmente con la massima precisione.",
+        "title": "Schweißen",
+        "text": "Das traditionelle Verfahren zum dauerhaften Fügen wird auch manuell mit höchster Genauigkeit durchgeführt.",
         "machines": ["Saldatrice Fronius MIG/MAG", "Saldatrice Fronius TIG/WIG"]
       },
       {
-        "title": "Finitura satinata",
-        "text": "Questo processo può essere utilizzato come ottimizzazione della superficie delle parti grezze per l'estetica o per altri scopi funzionali. Lo facciamo sia manualmente che meccanicamente. La perfezione è la nostra massima priorità.",
+        "title": "Satinieren",
+        "text": "Dieser Vorgang kann als Optimierung der Oberfläche der Rohteile zu ästhetischen und funktionalen Zwecken bezeichnet werden. Wir erledigen dies je nach Bedarf sowohl manuell als auch maschinell. Perfektion ist unser oberstes Gebot.",
         "machines": ["Costa MSA2 CRC+S 1350"]
       },
       {
-        "title": "Sbavatura",
-        "text": "Si riferisce all'arrotondamento dei bordi dei pezzi grezzi per mezzo di spazzole e smerigliatrici, azionate sia meccanicamente che manualmente. Questo processo serve a prevenire lesioni nella produzione, quindi ad aumentare la qualità finale del prodotto. La percezione più piacevole dei prodotti attraverso l’arrotondamento dei bordi interni ed esterni è una vera esperienza sensoriale.",
+        "title": "Entgraten",
+        "text": "Bezeichnet das Abrunden der Kanten von Rohteilen mittels Bürsten und Schleifmaschine sowohl maschinell als auch manuell. Dieser Schritt dient zur Vermeidung von Verletzungen, zur Steigerung der Endqualität des Produktes als auch für die angenehmere Haptik der Produkte durch Abrundung der Innen- und Außenkanten.",
         "machines": ["Costa MSA2 CRC+S 1350", "Macchine a nastro abrasivo"]
       },
       {
-        "title": "Foratura/Tornitura/Filettatura",
-        "text": "Il cliente è il re. Ci occupiamo di ogni passaggio richiesto.",
+        "title": "Bohren/Gewindeschneiden/Senken",
+        "text": "Der Kunde ist König. Wir erledigen jeden gewünschten Schritt.",
         "machines": ["Trapano da pavimento"]
       },
       {
-        "title": "Montaggio",
-        "text": "Implementazione perfetta grazie ad anni di esperienza. Offriamo il montaggio del singole parti in prodotti finiti o semilavorati secondo le esigenze del cliente."
+        "title": "Zusammenbau",
+        "text": "Perfekte Umsetzung durch jahrelange Erfahrung: Wir bieten Zusammenbau der Einzelteile zu Fertig- bzw. Halbfertigprodukten je nach Kundenwunsch an."
       },
       {
-        "title": "Post-elaborazione",
-        "text": "Per noi, questo significa eseguire un controllo della qualità al 100%. Nessun prodotto lascia la fabbrica senza un accurato controllo di qualità eseguito direttamente nei nostri padiglioni."
+        "title": "Nachbearbeitung",
+        "text": "Bedeutet bei uns 100% Qualitätskontrolle. Kein Produkt verlässt ohne ausgereifte Qualitätskontrolle unsere Hallen."
       }
     ]
   },
@@ -73,58 +73,58 @@
       "name": "TruLaser 3030L",
       "image": "https://picsum.photos/730/487",
       "details": [
-        "Sistema di taglio laser CO2 2D di Trumpf",
-        "Anno di fabbricazione: 2010",
-        "Potenza del laser: 5000W",
-        "Dimensione della scheda: 3000x1500",
-        "Opzioni di produzione: S235JR & S355J2 fino a 25mm, Inox 304 & 316L fino a 20mm, Alluminio fino a 12 mm, Acciai speciali come Hardox, Domex, ecc.",
-        "Extra: carico e scarico automatico"
+        "CO2 2D-Laserschneidanlage von Trumpf",
+        "Baujahr: 2010",
+        "Laserleistung: 5000W",
+        "Tafelformat: 3000x1500",
+        "Fertigungsmöglichkeiten: S235JR & S355J2 bis 25mm, Inox 304 & 316L bis 20mm, Aluminium bis 12mm, Sonderstähle wie bspw. Hardox, Domex usw.",
+        "Extras: automatisiertes Be- und Entladen"
       ]
     },
     "TruLaser Weld 5000": {
       "name": "TruLaser Weld 5000",
       "image": "https://picsum.photos/730/487",
       "details": [
-        "Saldatrice laser di Trumpf",
-        "Anno di fabbricazione: 2018",
-        "Max. Dimensioni: 1500x1500x500",
-        "Potenza del laser: 5000W",
-        "Opzioni di produzione: Inox, acciaio, acciaio zincato a caldo, titanio"
+        "Laserschweißanlage von Trumpf",
+        "Baujahr: 2018",
+        "Max. Abmessungen: 1500x1500x500",
+        "Laserleistung: 5000W",
+        "Fertigungsmöglichkeiten: Inox, Stahl, Feuerverzinkter Stahl, Titan"
       ]
     },
     "TrumaBend V130": {
       "name": "TrumaBend V130",
       "image": "https://picsum.photos/730/487",
       "details": [
-        "Macchina piegatrice di Trumpf",
-        "Anno di fabbricazione: 2000",
-        "Max. Lunghezza: 3000mm",
-        "Forza: 130KN",
-        "Max. Spessore del foglio: 6mm sulla lunghezza totale",
-        "Strumenti: uso esclusivo di strumenti di piegatura originali Trumpf"
+        "Biegemaschine von Trumpf",
+        "Baujahr: 2000",
+        "Max. Länge: 3000mm",
+        "Kraft: 130KN",
+        "Max. Blechstärke: 6mm auf Gesamtlänge",
+        "Werkzeuge: ausschließliche Verwendung von original Trumpf-Biegewerkzeugen"
       ]
     },
     "TruBend 5320": {
       "name": "TruBend 5320",
       "image": "https://picsum.photos/730/487",
       "details": [
-        "Macchina piegatrice di Trumpf",
-        "Anno di fabbricazione: 2016",
-        "Max. Lunghezza: 4000m",
-        "Forza: 320KN",
-        "Max. Spessore del foglio: 10mm sulla lunghezza totale",
-        "Strumenti: uso esclusivo di strumenti di piegatura originali Trumpf",
-        "Extra: aiuto alla piegatura per la piegatura di parti complesse, navetta portautensili come magazzino e aiuto al caricamento delle matrici di punzonatura e piegatura"
+        "Biegemaschine von Trumpf",
+        "Baujahr: 2016",
+        "Max. Länge: 4000m",
+        "Kraft: 320KN",
+        "Max. Blechstärke: 10mm auf Gesamtlänge",
+        "Werkzeuge: ausschließliche Verwendung von original Trumpf-Biegewerkzeugen",
+        "Extras: Biegehilfe zum Biegen von komplexen Teilen, oolshuttle als Magazin und Beladehilfe der Stempel- und Biegematrizen"
       ]
     },
     "Costa MSA2 CRC+S 1350:": {
       "name": "Costa MSA2 CRC+S 1350",
       "image": "https://picsum.photos/730/487",
       "details": [
-        "Sbavatrice e satinatrice Costa Levigatrici",
-        "Anno di fabbricazione: 2012",
-        "Max. Dimensioni: 4000x1350x140mm",
-        "Materiali: Inox e alluminio"
+        "Entgratungs- und Satiniermaschine von Costa Levigatrici",
+        "Baujahr: 2012",
+        "Max. Abmessungen: 4000x1350x140mm",
+        "Materialien: Inox und Aluminium"
       ]
     }
   },
@@ -141,31 +141,39 @@
   "strengths": {
     "first": [
       {
-        "title": "Precisione",
-        "text": "Ci concentriamo sulla precisione dimensionale e sulla puntualità"
+        "title": "Präzision",
+        "text": "Wir setzen auf Maßgenauigkeit und Pünktlichkeit."
       },
       {
-        "title": "Flessibilità",
-        "text": "La struttura aziendale a conduzione familiare ci rende flessibili e dinamici."
+        "title": "Flexibilität",
+        "text": "Die familienähnlichen Betriebsstruktur macht uns flexibel und anpassungsfähig."
       },
       {
-        "title": "Creatività",
-        "text": "Sviluppiamo soluzioni su misura per i nostri clienti."
+        "title": "Kreativität",
+        "text": "Wir erarbeiten maßgeschneiderte Lösungen für unsere Kunden."
       }
     ],
     "second": [
       {
-        "title": "Pulizia",
-        "text": "A partire dal nostro posto di lavoro fino al prodotto finale stesso."
+        "title": "Sauberkeit",
+        "text": "Beginnend bei unserem Arbeitsplatz bis hin zum Endprodukt selbst."
       },
       {
         "title": "Vicinanza ai clienti",
-        "text": "Il contatto personale con i nostri clienti è essenziale per il nostro successo."
+        "text": "Der persönliche Kontakt zu unseren Kunden ist für eine erfolgreiche Zusammenarbeit unverzichtbar."
       },
       {
-        "title": "Controllo di qualità al 100%",
-        "text": "I nostri prodotti sono controllati nei nostri padiglioni dalla A alla Z"
+        "title": "100% Qualitätskontrolle",
+        "text": ""
       }
     ]
+  },
+  "map": {
+    "header": "Gewerbegebiet 33 \\ Zona produttiva \\ 39053 Kardaun - Cardano"
+  },
+  "footer": {
+    "phone": "0471 052460",
+    "email": "laser@prolas.it - info@prolas.it",
+    "pec": "Pec-Adresse: info@pec.prolas.it"
   }
 }

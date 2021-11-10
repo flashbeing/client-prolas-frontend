@@ -8,7 +8,7 @@
             :key="index"
             class="clickable"
           >
-            <nuxt-link :to="localePath(item.path)" @click.native="hideMenu">
+            <nuxt-link :to="{ path: item.path }" @click.native="hideMenu">
               {{ item.name }}
             </nuxt-link>
           </li>
@@ -48,8 +48,8 @@
         <ul>
           <nuxt-link
             v-for="item of menuItems"
-            :key="item.path"
-            :to="localePath(item.path)"
+            :key="item.hash"
+            :to="{ path: item.path }"
             class="clickable"
             @click.native="hideMenu"
           >
@@ -123,6 +123,7 @@ header {
 
 .header-center {
   width: 100%;
+  height: inherit;
   margin: 0 auto;
   text-align: center;
 }
@@ -211,7 +212,7 @@ nav {
   }
 
   .menu-bt {
-    @apply block;
+    @apply block mr-3;
   }
 
   .menu {

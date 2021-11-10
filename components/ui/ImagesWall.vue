@@ -23,7 +23,8 @@
             :key="'strengthsSecond' + i"
             class="strengths"
           >
-            <span>{{ s.title }}:</span> {{ s.text }}
+            <span>{{ s.title }}</span
+            >{{ s.text ? `: ${s.text}` : null }}
           </p>
         </div>
       </div>

@@ -1,6 +1,8 @@
 <template>
   <main>
-    <div class="container container-big-gap">
+    <VideoMain />
+    <AboutUs id="us" />
+    <div id="whatWeDo" class="container container-big-gap">
       <SectionImageText
         v-for="(step, i) in whatWeDoSteps"
         :key="step.title"
@@ -11,23 +13,27 @@
         image="https://picsum.photos/624/433"
       />
     </div>
-    <div>
+    <div id="ourTech">
       <SideListWithRightDetails />
     </div>
     <div class="container container-small-gap">
       <ImagesWall />
-      <Location />
+      <Location id="ourLocation" />
     </div>
   </main>
 </template>
 
 <script>
+import VideoMain from '@/components/ui/VideoMain.vue'
+import AboutUs from '@/components/ui/AboutUs.vue'
 import SectionImageText from '@/components/ui/SectionImageText.vue'
 import SideListWithRightDetails from '@/components/ui/SideListWithRightDetails.vue'
 import ImagesWall from '@/components/ui/ImagesWall.vue'
 import Location from '@/components/ui/Location.vue'
 export default {
   components: {
+    VideoMain,
+    AboutUs,
     SectionImageText,
     SideListWithRightDetails,
     ImagesWall,
@@ -47,6 +53,9 @@ main {
 
   & > div {
     @apply my-20;
+    &:first-child {
+      @apply mt-0;
+    }
   }
 }
 

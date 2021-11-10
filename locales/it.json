@@ -167,5 +167,13 @@
         "text": "I nostri prodotti sono controllati nei nostri padiglioni dalla A alla Z"
       }
     ]
+  },
+  "map": {
+    "header": "Gewerbegebiet 33 \\ Zona produttiva \\ 39053 Kardaun - Cardano"
+  },
+  "footer": {
+    "phone": "0471 052460",
+    "email": "laser@prolas.it - info@prolas.it",
+    "pec": "Indirizzo PEC: info@pec.prolas.it"
   }
 }

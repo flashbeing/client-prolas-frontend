@@ -78,7 +78,16 @@ export default {
 
 <style lang="postcss" scoped>
 .side-list-wrapper {
-  @apply bg-primary py-24;
+  @apply bg-primary py-24 relative;
+
+  &::after {
+    @apply bg-primary w-full absolute;
+
+    z-index: -1;
+    content: '';
+    height: 40%;
+    bottom: -40%;
+  }
 }
 
 .unavailable-container {
@@ -177,6 +186,12 @@ export default {
           padding-right: 0;
         }
       }
+    }
+  }
+  .side-list-wrapper {
+    &::after {
+      height: 20%;
+      bottom: -20%;
     }
   }
 }

@@ -3,9 +3,7 @@
     <div class="map-header">
       <Logo class="logo" />
       <div class="map-header-location">
-        <span
-          >Gewerbegebiet 33 \ Zona produttiva \ 39053 Kardaun - Cardano</span
-        >
+        <span>{{ $t('map.header') }}</span>
       </div>
     </div>
     <section class="map-ct">
