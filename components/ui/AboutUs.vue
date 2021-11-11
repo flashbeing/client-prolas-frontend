@@ -1,7 +1,7 @@
 <template>
   <div class="about-us-container">
     <div class="image-container">
-      <img src="https://picsum.photos/961/1462" alt="" />
+      <img src="https://picsum.photos/1161/1662" alt="" />
     </div>
     <div class="text-container">
       <div class="text-wrapper">

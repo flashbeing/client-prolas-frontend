@@ -3,7 +3,7 @@
     <div class="map-header">
       <Logo class="logo" />
       <div class="map-header-location">
-        <span>{{ $t('map.header') }}</span>
+        <span><Location />{{ $t('map.header') }}</span>
       </div>
     </div>
     <section class="map-ct">
@@ -26,9 +26,10 @@
 
 <script>
 import Logo from '@/assets/image/Logo_Prolas.svg'
+import Location from '@/assets/icon/location.svg'
 
 export default {
-  components: { Logo },
+  components: { Logo, Location },
   data() {
     return {
       map: {
@@ -64,14 +65,25 @@ export default {
   @apply w-full z-10 px-2;
 }
 .map-header {
-  @apply flex justify-between flex-wrap;
+  @apply flex justify-between flex-wrap gap-3 mb-4;
 
   & > .logo {
+    @apply h-auto;
+
     max-width: 250px;
   }
 
   & > .map-header-location {
     @apply flex items-center text-primary text-lg;
+    & > span {
+      @apply flex gap-1;
+
+      & > svg {
+        @apply fill-current;
+
+        height: 30px;
+      }
+    }
   }
 }
 
@@ -86,6 +98,11 @@ export default {
     & .vue-map {
       @apply h-full;
     }
+  }
+}
+@media (max-width: theme('screens.md')) {
+  .map-header {
+    @apply mb-12;
   }
 }
 </style>

@@ -1,64 +1,65 @@
 <template>
   <header>
     <div class="header-center">
-      <nav>
-        <ul>
-          <li
-            v-for="(item, index) of menuItemsLeft"
-            :key="index"
-            class="clickable"
-          >
-            <nuxt-link :to="{ path: item.path }" @click.native="hideMenu">
-              {{ item.name }}
-            </nuxt-link>
-          </li>
-        </ul>
+      <nav class="desktop-nav">
+        <nuxt-link
+          v-for="item of menuItemsLeft"
+          :key="item.path"
+          :to="{ path: item.path }"
+          @click.native="hideMenu"
+        >
+          {{ item.name }}
+        </nuxt-link>
+        <nuxt-link
+          :to="localePath('/')"
+          tag="div"
+          class="logo clickable"
+          @click.native="hideMenu"
+        ></nuxt-link>
+        <nuxt-link
+          v-for="item of menuItemsRight"
+          :key="item.path"
+          :to="localePath(item.path)"
+          @click.native="hideMenu"
+        >
+          {{ item.name }}
+        </nuxt-link>
       </nav>
-      <nuxt-link
-        :to="localePath('/')"
-        tag="div"
-        class="logo clickable"
-        @click.native="hideMenu"
-      ></nuxt-link>
-      <nav>
-        <ul>
-          <li
-            v-for="(item, index) of menuItemsRight"
-            :key="index"
-            class="clickable"
-          >
-            <nuxt-link :to="localePath(item.path)" @click.native="hideMenu">
-              {{ item.name }}
-            </nuxt-link>
-          </li>
-        </ul>
+      <nav class="mobile-menu">
+        <nuxt-link
+          :to="localePath('/')"
+          tag="div"
+          class="logo clickable"
+          @click.native="hideMenu"
+        ></nuxt-link>
+        <div
+          class="menu-bt clickable"
+          :class="{ opened: isMenuOpened }"
+          @click="toggleMenu"
+        >
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <!-- </div> -->
+        <div class="menu" :class="{ visible: isMenuOpened }">
+          <div class="center relative h-full">
+            <ul>
+              <nuxt-link
+                v-for="item of menuItems"
+                :key="item.hash"
+                :to="{ path: item.path }"
+                class="clickable"
+                @click.native="hideMenu"
+              >
+                <li>
+                  {{ item.name }}
+                </li>
+              </nuxt-link>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <div
-        class="menu-bt clickable"
-        :class="{ opened: isMenuOpened }"
-        @click="toggleMenu"
-      >
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </div>
-    <div class="menu" :class="{ visible: isMenuOpened }">
-      <div class="center relative h-full">
-        <ul>
-          <nuxt-link
-            v-for="item of menuItems"
-            :key="item.hash"
-            :to="{ path: item.path }"
-            class="clickable"
-            @click.native="hideMenu"
-          >
-            <li>
-              {{ item.name }}
-            </li>
-          </nuxt-link>
-        </ul>
-      </div>
     </div>
   </header>
 </template>
@@ -117,7 +118,6 @@ header {
   @apply fixed bg-secondary text-primary w-full top-0 z-20;
 
   height: 60px;
-  font-size: 0;
   line-height: 60px;
 }
 
@@ -133,14 +133,13 @@ header {
 
   width: 250px;
   height: 30px;
-  margin-top: 13px;
   background-image: url(~assets/image/Logo_Prolas.svg?inline);
   background-position: center;
   background-size: auto 100%;
 }
 
 nav {
-  @apply inline-block text-right align-top;
+  @apply flex justify-evenly items-center;
 
   & li {
     @apply inline-block px-6 uppercase text-base;
@@ -189,6 +188,10 @@ nav {
   }
 }
 
+.mobile-menu {
+  @apply hidden;
+}
+
 .menu {
   @apply fixed right-0 bottom-0 left-0 bg-secondary opacity-0 pointer-events-none pt-10;
 
@@ -212,11 +215,12 @@ nav {
   }
 
   .menu-bt {
-    @apply block mr-3;
+    @apply block mr-2;
   }
 
   .menu {
     & ul {
+      @apply flex flex-col;
       & > li {
         @apply text-4xl;
 
@@ -229,10 +233,18 @@ nav {
     }
   }
   .logo {
+    @apply ml-3;
+
     background-position: left center;
   }
   .header-center {
     text-align: left;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-menu {
+    @apply flex items-center justify-start h-full;
   }
 }
 </style>

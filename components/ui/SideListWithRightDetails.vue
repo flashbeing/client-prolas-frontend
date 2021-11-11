@@ -172,10 +172,24 @@ export default {
 
     & > .side-list {
       width: 90%;
+
+      & > h3 {
+        @apply text-lg;
+      }
+      & > ul {
+        @apply text-base;
+
+        & > li {
+          &:hover,
+          &.selected {
+            @apply text-xl border-b-4 text-white;
+          }
+        }
+      }
     }
     & > .details-container {
       & > ul {
-        @apply pl-16;
+        @apply pl-8;
       }
 
       & > .image-container {
@@ -190,8 +204,14 @@ export default {
   }
   .side-list-wrapper {
     &::after {
-      height: 20%;
-      bottom: -20%;
+      height: 10%;
+      bottom: -10%;
+    }
+  }
+  .unavailable-container {
+    @apply pt-12;
+    & > .unavailable {
+      @apply text-sm;
     }
   }
 }

@@ -99,4 +99,11 @@ export default {
     line-height: 1.2;
   }
 }
+@media (max-width: theme('screens.md')) {
+  .box-container--blue {
+    &::before {
+      @apply hidden;
+    }
+  }
+}
 </style>

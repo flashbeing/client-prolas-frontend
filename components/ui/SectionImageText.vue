@@ -138,6 +138,14 @@ export default {
 
     & > .text-container {
       @apply w-full;
+
+      & > h3 {
+        @apply text-2xl break-all;
+      }
+
+      & > p {
+        @apply text-base;
+      }
     }
   }
   .reverse {
