@@ -1,7 +1,7 @@
 <template>
   <div class="about-us-container">
     <div class="image-container">
-      <img src="https://picsum.photos/1161/1662" alt="" />
+      <img src="~/assets/image/Trubend_vertical-min.jpeg" alt="" />
     </div>
     <div class="text-container">
       <div class="text-wrapper">
@@ -51,7 +51,7 @@ export default {}
     width: 70%;
 
     & h3 {
-      @apply text-4xl;
+      @apply text-4xl uppercase;
     }
   }
 }
@@ -65,7 +65,7 @@ export default {}
 
 @media (max-width: theme('screens.md')) {
   .about-us-container {
-    @apply flex-col;
+    @apply flex-col-reverse;
   }
   .image-container {
     @apply w-full;

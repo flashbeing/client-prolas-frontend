@@ -71,7 +71,6 @@
   "machines": {
     "TruLaser 3030L": {
       "name": "TruLaser 3030L",
-      "image": "https://picsum.photos/730/487",
       "details": [
         "CO2 2D-Laserschneidanlage von Trumpf",
         "Baujahr: 2010",
@@ -83,7 +82,6 @@
     },
     "TruLaser Weld 5000": {
       "name": "TruLaser Weld 5000",
-      "image": "https://picsum.photos/730/487",
       "details": [
         "Laserschweißanlage von Trumpf",
         "Baujahr: 2018",
@@ -94,7 +92,6 @@
     },
     "TrumaBend V130": {
       "name": "TrumaBend V130",
-      "image": "https://picsum.photos/730/487",
       "details": [
         "Biegemaschine von Trumpf",
         "Baujahr: 2000",
@@ -106,7 +103,6 @@
     },
     "TruBend 5320": {
       "name": "TruBend 5320",
-      "image": "https://picsum.photos/730/487",
       "details": [
         "Biegemaschine von Trumpf",
         "Baujahr: 2016",
@@ -117,9 +113,8 @@
         "Extras: Biegehilfe zum Biegen von komplexen Teilen, oolshuttle als Magazin und Beladehilfe der Stempel- und Biegematrizen"
       ]
     },
-    "Costa MSA2 CRC+S 1350:": {
+    "Costa MSA2 CRC+S 1350": {
       "name": "Costa MSA2 CRC+S 1350",
-      "image": "https://picsum.photos/730/487",
       "details": [
         "Entgratungs- und Satiniermaschine von Costa Levigatrici",
         "Baujahr: 2012",

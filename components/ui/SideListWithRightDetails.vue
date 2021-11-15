@@ -2,7 +2,7 @@
   <div class="side-list-wrapper">
     <div class="side-list-container">
       <div class="side-list">
-        <h3>UNSERE TECHNOLOGIEN</h3>
+        <h3>{{ $t('header.ourTech') }}</h3>
         <ul>
           <li
             v-for="(t, i) in machines"
@@ -28,7 +28,7 @@
           </div>
         </div>
       </div>
-      <div class="details-container">
+      <div class="details-container" :class="{ 'details-visible': !loading }">
         <div class="image-container">
           <img :src="image" alt="" />
         </div>
@@ -47,6 +47,7 @@ export default {
       machineSelected: 0,
       image: null,
       details: [],
+      loading: false,
     }
   },
   computed: {
@@ -54,7 +55,13 @@ export default {
       const machines = this.$t('machines')
       const machinesArray = []
       for (const name in machines) {
-        machinesArray.push(machines[name])
+        const m = {
+          ...machines[name],
+          image: require(`~/assets/image/${name
+            .split(' ')
+            .join('_')}-min.jpeg`),
+        }
+        machinesArray.push(m)
       }
       return machinesArray
     },
@@ -68,9 +75,13 @@ export default {
   },
   methods: {
     setMachineSelected(i) {
+      this.loading = true
       this.machineSelected = i
-      this.details = this.machines[i].details
       this.image = this.machines[i].image
+      this.details = this.machines[i].details
+      setTimeout(() => {
+        this.loading = false
+      }, 500)
     },
   },
 }
@@ -134,9 +145,14 @@ export default {
   }
 
   & > .details-container {
-    @apply flex-1;
+    @apply flex-1 opacity-0;
 
+    transition: 0.4s;
     max-width: 750px;
+
+    &.details-visible {
+      @apply opacity-100;
+    }
 
     & > ul {
       @apply pt-4 pl-6 list-disc;

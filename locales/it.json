@@ -1,9 +1,9 @@
 {
   "header": {
-    "whatWeDo": "cosa facciamo",
-    "ourTech": "le nostre tecnologie",
-    "us": "chi siamo",
-    "ourLocation": "dove siamo"
+    "whatWeDo": "COSA FACCIAMO",
+    "ourTech": "LE NOSTRE TECNOLOGIE",
+    "us": "CHI SIAMO",
+    "ourLocation": "DOVE SIAMO"
   },
   "ourValues": {
     "titles": ["I nostri valori", "La nostra storia"],
@@ -71,7 +71,6 @@
   "machines": {
     "TruLaser 3030L": {
       "name": "TruLaser 3030L",
-      "image": "https://picsum.photos/730/487",
       "details": [
         "Sistema di taglio laser CO2 2D di Trumpf",
         "Anno di fabbricazione: 2010",
@@ -83,7 +82,6 @@
     },
     "TruLaser Weld 5000": {
       "name": "TruLaser Weld 5000",
-      "image": "https://picsum.photos/730/487",
       "details": [
         "Saldatrice laser di Trumpf",
         "Anno di fabbricazione: 2018",
@@ -94,7 +92,6 @@
     },
     "TrumaBend V130": {
       "name": "TrumaBend V130",
-      "image": "https://picsum.photos/730/487",
       "details": [
         "Macchina piegatrice di Trumpf",
         "Anno di fabbricazione: 2000",
@@ -106,7 +103,6 @@
     },
     "TruBend 5320": {
       "name": "TruBend 5320",
-      "image": "https://picsum.photos/730/487",
       "details": [
         "Macchina piegatrice di Trumpf",
         "Anno di fabbricazione: 2016",
@@ -117,9 +113,8 @@
         "Extra: aiuto alla piegatura per la piegatura di parti complesse, navetta portautensili come magazzino e aiuto al caricamento delle matrici di punzonatura e piegatura"
       ]
     },
-    "Costa MSA2 CRC+S 1350:": {
+    "Costa MSA2 CRC+S 1350": {
       "name": "Costa MSA2 CRC+S 1350",
-      "image": "https://picsum.photos/730/487",
       "details": [
         "Sbavatrice e satinatrice Costa Levigatrici",
         "Anno di fabbricazione: 2012",

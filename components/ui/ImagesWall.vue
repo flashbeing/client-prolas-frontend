@@ -80,7 +80,7 @@ export default {
 }
 
 .box-container--bg-image {
-  background-image: url('~/assets/image/DSC01881.jpeg');
+  background-image: url('~/assets/image/metal_pieces-min.jpeg');
   background-size: cover;
 }
 

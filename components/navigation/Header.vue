@@ -131,8 +131,7 @@ header {
 .logo {
   @apply inline-block bg-no-repeat;
 
-  width: 250px;
-  height: 30px;
+  height: 48px;
   background-image: url(~assets/image/Logo_Prolas.svg?inline);
   background-position: center;
   background-size: auto 100%;
@@ -209,6 +208,15 @@ nav {
   }
 }
 
+.desktop-nav {
+  & > * {
+    width: calc(100% / 6);
+  }
+  & > a {
+    font-size: 1vw;
+  }
+}
+
 @media only screen and (max-width: 980px) {
   nav {
     @apply hidden;
@@ -235,6 +243,7 @@ nav {
   .logo {
     @apply ml-3;
 
+    width: 250px;
     background-position: left center;
   }
   .header-center {
