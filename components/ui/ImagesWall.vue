@@ -1,8 +1,8 @@
 <template>
   <div class="image-wall-container">
-    <img :src="imageBig" alt="" />
+    <img :src="require('~/assets/image/images_wall_1.jpeg')" alt="" />
     <div class="row">
-      <img :src="image" alt="" />
+      <img :src="require('~/assets/image/images_wall_2.jpeg')" alt="" />
       <div class="box-container box-container--blue">
         <div class="box">
           <p
@@ -28,19 +28,13 @@
           </p>
         </div>
       </div>
-      <img :src="image" alt="" />
+      <img :src="require('~/assets/image/images_wall_3.jpeg')" alt="" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      image: 'https://picsum.photos/1150/569',
-      imageBig: 'https://picsum.photos/1739/988',
-    }
-  },
   computed: {
     strengthsFirst() {
       return this.$t('strengths.first')
@@ -60,6 +54,8 @@ export default {
   @apply flex gap-3 flex-wrap;
   & > img {
     @apply flex-1;
+
+    max-width: 70%;
   }
 }
 
@@ -103,6 +99,12 @@ export default {
   .box-container--blue {
     &::before {
       @apply hidden;
+    }
+  }
+
+  .row {
+    & > img {
+      max-width: 100%;
     }
   }
 }
