@@ -16,6 +16,11 @@ html {
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {

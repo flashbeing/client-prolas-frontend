@@ -2,7 +2,7 @@
   <div class="section-media-text-container" :class="{ reverse: right }">
     <div class="media-container">
       <img v-if="isImage" :src="media" />
-      <video v-else :src="media" autoplay loop />
+      <video v-else :src="media" autoplay loop muted playsinline />
     </div>
     <div class="text-container">
       <h3>{{ title }}</h3>
