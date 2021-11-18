@@ -90,6 +90,8 @@ img {
 
   &.hidden-image {
     @apply opacity-0 pointer-events-none absolute;
+
+    top: -99999px;
   }
 }
 

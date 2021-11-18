@@ -1,5 +1,5 @@
 <template>
-  <header :style="`height:${headerHeight}px`">
+  <header :style="`height:${headerHeight}px;`">
     <div class="header-center">
       <nav class="desktop-nav">
         <nuxt-link
@@ -30,11 +30,13 @@
         <nuxt-link
           :to="localePath('/')"
           tag="div"
+          :style="`height:${logoHeight}px`"
           class="logo clickable"
           @click.native="hideMenu"
         ></nuxt-link>
         <div
           class="menu-bt clickable"
+          :style="`top:${burgerTopDistance}px`"
           :class="{ opened: isMenuOpened }"
           @click="toggleMenu"
         >
@@ -72,6 +74,7 @@ export default {
       isMenuOpened: false,
       logoHeight: 60,
       headerHeight: 80,
+      burgerTopDistance: 24,
     }
   },
 
@@ -123,9 +126,11 @@ export default {
       ) {
         this.logoHeight = 48
         this.headerHeight = 60
+        this.burgerTopDistance = 16
       } else {
         this.logoHeight = 60
         this.headerHeight = 80
+        this.burgerTopDistance = 24
       }
     },
   },
@@ -242,6 +247,8 @@ nav {
 
   .menu-bt {
     @apply block mr-2;
+
+    transition: 0.4s;
   }
 
   .menu {
