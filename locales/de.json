@@ -154,7 +154,7 @@
         "text": "Beginnend bei unserem Arbeitsplatz bis hin zum Endprodukt selbst."
       },
       {
-        "title": "Vicinanza ai clienti",
+        "title": "Kundennähe",
         "text": "Der persönliche Kontakt zu unseren Kunden ist für eine erfolgreiche Zusammenarbeit unverzichtbar."
       },
       {
@@ -169,6 +169,7 @@
   "footer": {
     "phone": "0471 052460",
     "email": "laser@prolas.it - info@prolas.it",
-    "pec": "Pec-Adresse: info@pec.prolas.it"
+    "pec": "Pec-Adresse: info@pec.prolas.it",
+    "jobs": "Jobs"
   }
 }

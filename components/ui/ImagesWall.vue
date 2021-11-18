@@ -1,8 +1,22 @@
 <template>
   <div class="image-wall-container">
-    <img :src="require('~/assets/image/images_wall_1.jpeg')" alt="" />
+    <img
+      :src="require('~/assets/image/images_wall_1_1.jpeg')"
+      :class="{ 'hidden-image': showImages[0] }"
+    />
+    <img
+      :src="require('~/assets/image/images_wall_1_2.jpeg')"
+      :class="{ 'hidden-image': !showImages[0] }"
+    />
     <div class="row">
-      <img :src="require('~/assets/image/images_wall_2.jpeg')" alt="" />
+      <img
+        :src="require('~/assets/image/images_wall_2_1.jpeg')"
+        :class="{ 'hidden-image': showImages[1] }"
+      />
+      <img
+        :src="require('~/assets/image/images_wall_2_2.jpeg')"
+        :class="{ 'hidden-image': !showImages[1] }"
+      />
       <div class="box-container box-container--blue">
         <div class="box">
           <p
@@ -28,13 +42,25 @@
           </p>
         </div>
       </div>
-      <img :src="require('~/assets/image/images_wall_3.jpeg')" alt="" />
+      <img
+        :src="require('~/assets/image/images_wall_3_1.jpeg')"
+        :class="{ 'hidden-image': showImages[2] }"
+      />
+      <img
+        :src="require('~/assets/image/images_wall_3_1.jpeg')"
+        :class="{ 'hidden-image': !showImages[2] }"
+      />
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      showImages: [true, true, true],
+    }
+  },
   computed: {
     strengthsFirst() {
       return this.$t('strengths.first')
@@ -43,9 +69,30 @@ export default {
       return this.$t('strengths.second')
     },
   },
+  mounted() {
+    this.alternateImages()
+  },
+  methods: {
+    alternateImages() {
+      setInterval(() => {
+        const array = [...this.showImages].map((image) => !image)
+        this.showImages = array
+      }, 5000)
+    },
+  },
 }
 </script>
 <style lang="postcss" scoped>
+img {
+  @apply opacity-100 pointer-events-auto relative;
+
+  transition: 0.8s;
+
+  &.hidden-image {
+    @apply opacity-0 pointer-events-none absolute;
+  }
+}
+
 .image-wall-container {
   @apply flex flex-col gap-3 pb-16 border-b-4 border-primary;
 }

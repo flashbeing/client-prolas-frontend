@@ -53,13 +53,18 @@ export default {
     top: 50%;
     left: 50%;
     & > .chevron-right {
-      @apply w-full fill-current;
+      @apply fill-current;
 
+      transform: scaleX(0.5);
       transition: 0.4s;
+
+      & > path {
+        stroke-width: 3px;
+      }
     }
     &:hover {
       & > .chevron-right {
-        transform: scaleY(0.7);
+        transform: scaleX(1);
       }
     }
   }

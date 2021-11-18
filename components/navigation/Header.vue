@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header :style="`height:${headerHeight}px`">
     <div class="header-center">
       <nav class="desktop-nav">
         <nuxt-link
@@ -14,6 +14,7 @@
           :to="localePath('/')"
           tag="div"
           class="logo clickable"
+          :style="`height:${logoHeight}px`"
           @click.native="hideMenu"
         ></nuxt-link>
         <nuxt-link
@@ -69,6 +70,8 @@ export default {
   data() {
     return {
       isMenuOpened: false,
+      logoHeight: 60,
+      headerHeight: 80,
     }
   },
 
@@ -101,13 +104,29 @@ export default {
       return [...this.menuItemsLeft, ...this.menuItemsRight]
     },
   },
-
+  mounted() {
+    window.onscroll = () => {
+      this.scrollFunction()
+    }
+  },
   methods: {
     toggleMenu() {
       this.isMenuOpened = !this.isMenuOpened
     },
     hideMenu() {
       this.isMenuOpened = false
+    },
+    scrollFunction() {
+      if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+      ) {
+        this.logoHeight = 48
+        this.headerHeight = 60
+      } else {
+        this.logoHeight = 60
+        this.headerHeight = 80
+      }
     },
   },
 }
@@ -117,8 +136,7 @@ export default {
 header {
   @apply fixed bg-secondary text-primary w-full top-0 z-20;
 
-  height: 60px;
-  line-height: 60px;
+  transition: 0.4s;
 }
 
 .header-center {
@@ -131,14 +149,14 @@ header {
 .logo {
   @apply inline-block bg-no-repeat;
 
-  height: 48px;
+  transition: 0.4s;
   background-image: url(~assets/image/Logo_Prolas.svg?inline);
   background-position: center;
   background-size: auto 100%;
 }
 
 nav {
-  @apply flex justify-evenly items-center;
+  @apply flex justify-evenly items-center h-full;
 
   & li {
     @apply inline-block px-6 uppercase text-base;

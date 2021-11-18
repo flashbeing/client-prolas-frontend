@@ -3,6 +3,9 @@
     <span><Phone />{{ $t('footer.phone') }}</span>
     <span><Email />{{ $t('footer.email') }}</span>
     <span>{{ $t('footer.pec') }}</span>
+    <span
+      ><a href=""> {{ $t('footer.jobs') }}</a></span
+    >
   </footer>
 </template>
 
@@ -23,7 +26,11 @@ footer {
   @apply flex justify-center gap-32 bg-primary py-32 relative;
   & > span {
     @apply flex items-center gap-4 text-xl text-white;
-
+    & > a {
+      &:hover {
+        @apply underline;
+      }
+    }
     & > svg {
       @apply fill-current;
 

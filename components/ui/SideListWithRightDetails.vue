@@ -5,10 +5,10 @@
         <h3>{{ $t('header.ourTech') }}</h3>
         <ul>
           <li
-            v-for="(t, i) in machines"
-            :key="'machine' + i"
-            :class="{ selected: i == machineSelected }"
-            @click="setMachineSelected(i)"
+            v-for="(t, k) in machines"
+            :key="k"
+            :class="{ selected: k == machineSelected }"
+            @click="setMachineSelected(t.name)"
           >
             {{ t.name }}
           </li>
@@ -44,26 +44,17 @@
 export default {
   data() {
     return {
-      machineSelected: 0,
       image: null,
       details: [],
       loading: false,
     }
   },
   computed: {
+    machineSelected() {
+      return this.$store.state.page.machineSelected
+    },
     machines() {
-      const machines = this.$t('machines')
-      const machinesArray = []
-      for (const name in machines) {
-        const m = {
-          ...machines[name],
-          image: require(`~/assets/image/${name
-            .split(' ')
-            .join('_')}-min.jpeg`),
-        }
-        machinesArray.push(m)
-      }
-      return machinesArray
+      return this.$t('machines')
     },
     unavailableMachines() {
       return this.$t('unavailableMachines')
@@ -71,17 +62,22 @@ export default {
   },
   created() {
     this.details = this.machines[this.machineSelected].details
-    this.image = this.machines[this.machineSelected].image
+    this.image = this.getMachineImage()
   },
   methods: {
-    setMachineSelected(i) {
+    setMachineSelected(machine) {
       this.loading = true
-      this.machineSelected = i
-      this.image = this.machines[i].image
-      this.details = this.machines[i].details
+      this.$store.commit('page/setMachineSelected', machine)
+      this.image = this.getMachineImage()
+      this.details = this.machines[machine].details
       setTimeout(() => {
         this.loading = false
       }, 500)
+    },
+    getMachineImage() {
+      return require(`~/assets/image/${this.machineSelected
+        .split(' ')
+        .join('_')}-min.jpeg`)
     },
   },
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="accordion-container">
-    <span @click="toggleContentVisibility"
+    <span @click="handleClick"
       >{{ title }}
       <span class="icon-container"><ChevronBig class="chevron-big" /></span
     ></span>
@@ -29,6 +29,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    anchor: {
+      type: String,
+      default: null,
+    },
   },
   data() {
     return {
@@ -36,8 +40,20 @@ export default {
     }
   },
   methods: {
+    handleClick() {
+      if (this.anchor) {
+        this.scrollTo()
+        return
+      }
+
+      this.toggleContentVisibility()
+    },
     toggleContentVisibility() {
       this.showContent = !this.showContent
+    },
+    scrollTo() {
+      this.$store.commit('page/setMachineSelected', this.title)
+      this.$router.push({ path: this.anchor })
     },
   },
 }
@@ -56,8 +72,12 @@ export default {
       & > .chevron-big {
         @apply w-full;
 
-        transform: scaleY(0.7);
+        transform: scaleY(0.5);
         transition: 0.4s;
+        & > path {
+          vector-effect: non-scaling-stroke;
+          stroke-width: 3px;
+        }
       }
 
       &:hover {
