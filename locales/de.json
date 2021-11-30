@@ -44,23 +44,18 @@
         "machines": ["Saldatrice Fronius MIG/MAG", "Saldatrice Fronius TIG/WIG"]
       },
       {
-        "title": "Satinieren",
-        "text": "Dieser Vorgang kann als Optimierung der Oberfläche der Rohteile zu ästhetischen und funktionalen Zwecken bezeichnet werden. Wir erledigen dies je nach Bedarf sowohl manuell als auch maschinell. Perfektion ist unser oberstes Gebot.",
-        "machines": ["Costa MSA2 CRC+S 1350"]
-      },
-      {
         "title": "Entgraten",
         "text": "Bezeichnet das Abrunden der Kanten von Rohteilen mittels Bürsten und Schleifmaschine sowohl maschinell als auch manuell. Dieser Schritt dient zur Vermeidung von Verletzungen, zur Steigerung der Endqualität des Produktes als auch für die angenehmere Haptik der Produkte durch Abrundung der Innen- und Außenkanten.",
         "machines": ["Costa MSA2 CRC+S 1350", "Macchine a nastro abrasivo"]
       },
       {
-        "title": "Bohren/Gewindeschneiden/Senken",
-        "text": "Der Kunde ist König. Wir erledigen jeden gewünschten Schritt.",
-        "machines": ["Trapano da pavimento"]
+        "title": "Satinieren",
+        "text": "Dieser Vorgang kann als Optimierung der Oberfläche der Rohteile zu ästhetischen und funktionalen Zwecken bezeichnet werden. Wir erledigen dies je nach Bedarf sowohl manuell als auch maschinell. Perfektion ist unser oberstes Gebot.",
+        "machines": ["Costa MSA2 CRC+S 1350"]
       },
       {
         "title": "Zusammenbau",
-        "text": "Perfekte Umsetzung durch jahrelange Erfahrung: Wir bieten Zusammenbau der Einzelteile zu Fertig- bzw. Halbfertigprodukten je nach Kundenwunsch an."
+        "text": "Perfekte Umsetzung durch jahrelange Erfahrung: Wir bieten Zusammenbau als auch Bearbeitung der Einzelteile zu Fertig- bzw. Halbfertigprodukten je nach Kundenwunsch an."
       },
       {
         "title": "Nachbearbeitung",
@@ -125,11 +120,11 @@
   },
   "unavailableMachines": [
     {
-      "name": "TruBend 7050 (ab Jahresende)",
+      "name": "TruBend 7050 (ab 2022)",
       "details": ["Biegemaschine"]
     },
     {
-      "name": "Biegemaschine HAEGER 824 One Touch4e (ab Jahresende)",
+      "name": "HAEGER 824 One Touch4e (ab 2022)",
       "details": ["Einpressmaschine"]
     }
   ],

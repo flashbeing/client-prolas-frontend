@@ -44,23 +44,18 @@
         "machines": ["Saldatrice Fronius MIG/MAG", "Saldatrice Fronius TIG/WIG"]
       },
       {
-        "title": "Finitura satinata",
-        "text": "Questo processo può essere utilizzato come ottimizzazione della superficie delle parti grezze per l'estetica o per altri scopi funzionali. Lo facciamo sia manualmente che meccanicamente. La perfezione è la nostra massima priorità.",
-        "machines": ["Costa MSA2 CRC+S 1350"]
-      },
-      {
         "title": "Sbavatura",
         "text": "Si riferisce all'arrotondamento dei bordi dei pezzi grezzi per mezzo di spazzole e smerigliatrici, azionate sia meccanicamente che manualmente. Questo processo serve a prevenire lesioni nella produzione, quindi ad aumentare la qualità finale del prodotto. La percezione più piacevole dei prodotti attraverso l’arrotondamento dei bordi interni ed esterni è una vera esperienza sensoriale.",
         "machines": ["Costa MSA2 CRC+S 1350", "Macchine a nastro abrasivo"]
       },
       {
-        "title": "Foratura/Tornitura/Filettatura",
-        "text": "Il cliente è il re. Ci occupiamo di ogni passaggio richiesto.",
-        "machines": ["Trapano da pavimento"]
+        "title": "Finitura satinata",
+        "text": "Questo processo può essere utilizzato come ottimizzazione della superficie delle parti grezze per l'estetica o per altri scopi funzionali. Lo facciamo sia manualmente che meccanicamente. La perfezione è la nostra massima priorità.",
+        "machines": ["Costa MSA2 CRC+S 1350"]
       },
       {
         "title": "Montaggio",
-        "text": "Implementazione perfetta grazie ad anni di esperienza. Offriamo il montaggio del singole parti in prodotti finiti o semilavorati secondo le esigenze del cliente."
+        "text": " implementazione perfetta grazie ad anni di esperienza. Offriamo il montaggio e la lavorazione delle singole parti in prodotti finiti o semilavorati secondo le esigenze del cliente."
       },
       {
         "title": "Post-elaborazione",
@@ -125,12 +120,12 @@
   },
   "unavailableMachines": [
     {
-      "name": "TruBend 7050 (ab Jahresende)",
-      "details": ["Biegemaschine"]
+      "name": "TruBend 7050 (dal 2022)",
+      "details": ["Macchina piegatrice"]
     },
     {
-      "name": "Biegemaschine HAEGER 824 One Touch4e (ab Jahresende)",
-      "details": ["Einpressmaschine"]
+      "name": "HAEGER 824 One Touch4e (dal 2022)",
+      "details": ["Macchina pressatrice"]
     }
   ],
   "strengths": {

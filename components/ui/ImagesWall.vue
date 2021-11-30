@@ -47,7 +47,7 @@
         :class="{ 'hidden-image': showImages[2] }"
       />
       <img
-        :src="require('~/assets/image/images_wall_3_1.jpeg')"
+        :src="require('~/assets/image/images_wall_3_2.jpeg')"
         :class="{ 'hidden-image': !showImages[2] }"
       />
     </div>

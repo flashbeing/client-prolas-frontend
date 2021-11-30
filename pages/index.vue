@@ -2,17 +2,21 @@
   <main>
     <VideoMain />
     <AboutUs id="us" />
-    <div id="whatWeDo" class="section container container-big-gap">
-      <SectionMediaText
-        v-for="(step, i) in whatWeDoSteps"
-        :key="step.title"
-        :title="step.title"
-        :text="step.text"
-        :machines="step.machines"
-        :right="Boolean(i % 2)"
-        :media="media[i].url"
-        :is-image="media[i].isImage"
-      />
+    <div id="whatWeDo">
+      <h2>{{ $t('header.whatWeDo') }}</h2>
+      <h3>{{ $t('whatWeDo.subtitle') }}</h3>
+      <div class="section container container-big-gap">
+        <SectionMediaText
+          v-for="(step, i) in whatWeDoSteps"
+          :key="step.title"
+          :title="step.title"
+          :text="step.text"
+          :machines="step.machines"
+          :right="Boolean(i % 2)"
+          :media="media[i].url"
+          :is-image="media[i].isImage"
+        />
+      </div>
     </div>
     <div id="ourTech">
       <SideListWithRightDetails />
@@ -109,6 +113,15 @@ main {
 
 .container-big-gap {
   @apply gap-48;
+}
+
+#whatWeDo {
+  & > h2 {
+    @apply pt-32 text-center text-primary font-bold text-4xl;
+  }
+  & > h3 {
+    @apply pt-8 pb-32 text-center text-primary text-2xl;
+  }
 }
 
 @media (max-width: theme('screens.md')) {

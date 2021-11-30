@@ -83,11 +83,11 @@ export default {
       return [
         {
           name: this.$t('header.whatWeDo'),
-          path: '/#whatWeDo',
+          path: '#whatWeDo',
         },
         {
           name: this.$t('header.ourTech'),
-          path: '/#ourTech',
+          path: '#ourTech',
         },
       ]
     },
@@ -95,11 +95,11 @@ export default {
       return [
         {
           name: this.$t('header.us'),
-          path: '/#us',
+          path: '#us',
         },
         {
           name: this.$t('header.ourLocation'),
-          path: '/#ourLocation',
+          path: '#ourLocation',
         },
       ]
     },
@@ -240,7 +240,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: theme('screens.md')) {
   nav {
     @apply hidden;
   }
@@ -254,8 +254,8 @@ nav {
   .menu {
     & ul {
       @apply flex flex-col;
-      & > li {
-        @apply text-4xl;
+      & li {
+        @apply text-2xl;
 
         filter: blur(0);
       }
@@ -277,6 +277,7 @@ nav {
   .desktop-nav {
     display: none;
   }
+
   .mobile-menu {
     @apply flex items-center justify-start h-full;
   }
