@@ -74,10 +74,6 @@ export default {
           url: require('~/assets/image/Costa_MSA2_CRC+S_1350-min.jpeg'),
         },
         {
-          isImage: true,
-          url: require('~/assets/image/Bohren-min.jpeg'),
-        },
-        {
           url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/zusammenbau.mp4',
         },
         {

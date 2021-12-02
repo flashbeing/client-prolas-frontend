@@ -8,7 +8,7 @@
   "ourValues": {
     "titles": ["UNSERE WERTE", "UNSERE GESCHICHTE"],
     "descriptions": [
-      "Unser generationenüberschreitender Familienbetrieb setzt seit der Gründung im Jahre 1964 auf solide Lösungen mit maximaler Präzision im Bereich Metallverarbeitung.",
+      "Das Zusammenspiel von Tradition und Fortschritt sind Grundlage unseres Unternehmens. Neuste Technologien sind unser Werkzeug. Unser generationenüberschreitender Familienbetrieb setzt seit der Gründung im Jahre 1964 auf solide Lösungen mit maximaler Präzision im Bereich Metallverarbeitung.",
       "Nach Übernahme und Neuausrichtung durch die Gebrüder Lageder 1990, erfolgte im Jahre 2020 die Abspaltung des Bereichs Blechverarbeitung mit Gründung der ProLas GmbH."
     ]
   },
@@ -50,7 +50,7 @@
       },
       {
         "title": "Satinieren",
-        "text": "Dieser Vorgang kann als Optimierung der Oberfläche der Rohteile zu ästhetischen und funktionalen Zwecken bezeichnet werden. Wir erledigen dies je nach Bedarf sowohl manuell als auch maschinell. Perfektion ist unser oberstes Gebot.",
+        "text": "Dieser Vorgang kann als Optimierung der Oberfläche der Rohteile zu ästhetischen und funktionalen Zwecken bezeichnet werden. Wir erledigen dies je nach Bedarf sowohl manuell als auch maschinell.",
         "machines": ["Costa MSA2 CRC+S 1350"]
       },
       {

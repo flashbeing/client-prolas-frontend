@@ -8,8 +8,8 @@
   "ourValues": {
     "titles": ["I nostri valori", "La nostra storia"],
     "descriptions": [
-      "La nostra azienda familiare nasce nel 1964, passando il testimone da generazione in generazione è arrivata fino ad oggi. Il segreto del nostro successo risiede nella ricerca di soluzione solide precise e concrete nel campo della lavorazione dei metalli.",
-      "Il 1990 segna un anno di grande riorganizzazione per l’azienda: i fratelli Lageder ereditano il testimone dal papà, lavorando fianco a fianco fino al 2020: qui la decisone di dividere le competenze e quindi la nascita di ProLas Srl. "
+      "La fusione tra tradizione e progresso sono le fondamenta della nostra realtà familiare. Le ultime avanguardie tecnologiche sono gli strumenti per realizzare i nostri progetti. La nostra azienda familiare nasce nel 1964, passando il testimone da generazione in generazione è arrivata fino ad oggi. Il segreto del nostro successo risiede nella ricerca di soluzione solide precise e concrete nel campo della lavorazione dei metalli.",
+      "Il 1990 segna un anno di grande riorganizzazione per l’azienda, i fratelli Lageder ereditano il testimone dal papà, lavorando fianco a fianco fino al 2020: qui la decisone di dividere le competenze e quindi la nascita di ProLas Srl. "
     ]
   },
   "whatWeDo": {
@@ -50,7 +50,7 @@
       },
       {
         "title": "Finitura satinata",
-        "text": "Questo processo può essere utilizzato come ottimizzazione della superficie delle parti grezze per l'estetica o per altri scopi funzionali. Lo facciamo sia manualmente che meccanicamente. La perfezione è la nostra massima priorità.",
+        "text": "Questo processo può essere utilizzato come ottimizzazione della superficie delle parti grezze per l'estetica o per altri scopi funzionali. Lo facciamo sia manualmente che meccanicamente.",
         "machines": ["Costa MSA2 CRC+S 1350"]
       },
       {
