@@ -4,7 +4,7 @@
       ref="videoMain"
       :class="{ 'show-video': showVideo }"
       :controls="showVideo"
-      src="https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/intro.mp4"
+      src="https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/v2/intro.mp4"
     ></video>
     <div v-if="!showVideo" class="icon-container" @click="toggleShowVideo()">
       <ChevronRight class="chevron-right" />

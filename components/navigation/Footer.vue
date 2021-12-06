@@ -4,7 +4,9 @@
     <span><Email />{{ $t('footer.email') }}</span>
     <span>{{ $t('footer.pec') }}</span>
     <span
-      ><a href=""> {{ $t('footer.jobs') }}</a></span
+      ><a href="https://forms.gle/gyggyg3FDY7vq4Mo8">
+        {{ $t('footer.jobs') }}</a
+      ></span
     >
   </footer>
 </template>

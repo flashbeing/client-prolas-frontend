@@ -48,36 +48,36 @@ export default {
     return {
       media: [
         {
-          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/kinzeption.mp4',
+          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/v2/kinzeption.m4v',
         },
         {
-          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/prototypenfertigung.mp4',
+          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/v2/prototypenfertigung.m4v',
         },
         {
-          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/laserschneiden.mp4',
+          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/v2/laserschneiden.m4v',
         },
         {
-          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/biegen.mp4',
+          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/v2/biegen.m4v',
         },
         {
-          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/laserschweissen.mp4',
+          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/v2/laserschweissen.m4v',
         },
         {
           isImage: true,
           url: require('~/assets/image/Schweissen-min.jpeg'),
         },
         {
-          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/satinieren.mp4',
+          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/v2/satinieren.m4v',
         },
         {
           isImage: true,
           url: require('~/assets/image/Costa_MSA2_CRC+S_1350-min.jpeg'),
         },
         {
-          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/zusammenbau.mp4',
+          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/v2/zusammenbau.m4v',
         },
         {
-          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/nachbearbeitung.mp4',
+          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/v2/nachbearbeitung.m4v',
         },
       ],
     }
