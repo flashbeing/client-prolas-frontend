@@ -8,25 +8,25 @@
   "ourValues": {
     "titles": ["I nostri valori", "La nostra storia"],
     "descriptions": [
-      "La fusione tra tradizione e progresso sono le fondamenta della nostra realtà familiare. Le ultime avanguardie tecnologiche sono gli strumenti per realizzare i nostri progetti.",
-      "La nostra azienda familiare nasce nel 1964, passando il testimone da generazione in generazione è arrivata fino ad oggi. Il segreto del nostro successo risiede nella ricerca di soluzione solide precise e concrete nel campo della lavorazione dei metalli.",
-      "Il 1990 segna un anno di grande riorganizzazione per l’azienda, i fratelli Lageder ereditano il testimone dal papà, lavorando fianco a fianco fino al 2020: qui la decisone di dividere le competenze e quindi la nascita di ProLas Srl. "
+      "La fusione tra tradizione e progresso sono le fondamenta della nostra azienda transgenerazionale. Le ultime avanguardie tecnologiche sono gli strumenti per realizzare i nostri progetti.",
+      "La nostra azienda familiare offre dal 1964 soluzioni precise e concrete nel campo della lavorazione dei metalli.",
+      "Nell’anno 1990 avviene la prima grande riorganizzazione, quando la gestione viene preso in carico dai fratelli Lageder, lavorando fianco a fianco fino al 2020: qui la decisone di dividere le competenze e quindi la nascita di ProLas srl."
     ]
   },
   "whatWeDo": {
-    "subtitle": "Amiamo le sfide e le affrontiamo con un lavoro di grande precisione e qualità.",
+    "subtitle": "Amiamo le sfide e le affrontiamo con precisione e qualità.",
     "steps": [
       {
         "title": "Concetto e design 3D",
-        "text": "Siamo sinonimo di dinamismo e professionalità.Sviluppiamo soluzioni ottimali su richiesta del cliente: progettiamo con supporto CAD componenti e prodotti finiti, ma ci occupiamo anche dell’ottimizzazione e dell'adattamento di componenti e geometrie esistenti. Viviamo giorno dopo giorno l'innovazione."
+        "text": "Sviluppiamo soluzioni ottimali su richiesta del cliente: progettiamo con supporto CAD componenti e prodotti finiti, ma ci occupiamo anche dell’ottimizzazione e dell'adattamento di componenti e geometrie esistenti."
       },
       {
         "title": "Produzione di prototipi",
-        "text": "In questa fase, ci occupiamo di assistere il cliente nello sviluppo dei prototipi e della successiva fase di produzione. Nei nostri compiti rientra anche l'ottimizzazione del processo di produzione per quanto riguarda la produzione in serie. "
+        "text": "In questa fase, ci occupiamo di assistere il cliente nello sviluppo dei prototipi e della successiva fase di produzione. Nei nostri compiti rientra anche l'ottimizzazione del processo di produzione per quanto riguarda la produzione in serie."
       },
       {
         "title": "Taglio laser 2D",
-        "text": "Il sistema di taglio laser CO2 mantiene ciò che promette: alta precisione, velocità nella produzione e bordi con taglio netto e preciso anche impiegando materiali di grande spessore. ",
+        "text": "Il sistema di taglio laser CO2 mantiene ciò che promette: alta precisione e velocità nella produzione, contorni di taglio puliti e precisi, anche su materiali di grande spessore.",
         "machines": ["TruLaser 3030L"]
       },
       {
@@ -35,18 +35,18 @@
         "machines": ["TrumaBend V130", "TruBend 5320", "TruBend 7050"]
       },
       {
-        "title": "Saldatura laser",
-        "text": "La saldatura laser con l'uso di robot è più precisa della saldatura tradizionale: l'efficienza dovuta all'aumento della velocità di saldatura, la precisione dimensionale dovuta al basso apporto di calore e all'esatta chiusura del gap così come il risparmio dovuto all'assenza di rilavorazione sono il nostro pane quotidiano, sono elementi di estrema precisione che rendono le nostre lavorazioni uniche ed inimitabili.",
+        "title": "Saldatura a laser",
+        "text": "La saldatura a laser con l'uso di robot è più precisa della saldatura tradizionale: l'efficienza dovuta all'aumento della velocità di saldatura, la precisione dimensionale dovuta al basso apporto di calore e all'esatta chiusura del gap e il risparmio dovuto all'assenza di rilavorazione.",
         "machines": ["TruLaser Weld 5000"]
       },
       {
         "title": "Saldatura",
-        "text": "Anche il processo tradizionale di giunzione permanente viene eseguito manualmente con la massima precisione.",
+        "text": "Anche il processo tradizionale di saldatura viene eseguito manualmente con la massima precisione.",
         "machines": ["Saldatrice Fronius MIG/MAG", "Saldatrice Fronius TIG/WIG"]
       },
       {
         "title": "Sbavatura",
-        "text": "Si riferisce all'arrotondamento dei bordi dei pezzi grezzi per mezzo di spazzole e smerigliatrici, azionate sia meccanicamente che manualmente. Questo processo serve a prevenire lesioni nella produzione, quindi ad aumentare la qualità finale del prodotto. La percezione più piacevole dei prodotti attraverso l’arrotondamento dei bordi interni ed esterni è una vera esperienza sensoriale.",
+        "text": "Si riferisce all'arrotondamento dei bordi interni ed esterni dei pezzi grezzi per mezzo di spazzole e smerigliatrici, azionate sia meccanicamente che manualmente. Questo processo serve a prevenire lesioni durante la produzione e di aumentare la qualità finale del prodotto.",
         "machines": ["Costa MSA2 CRC+S 1350", "Macchine a nastro abrasivo"]
       },
       {
@@ -133,7 +133,7 @@
     "first": [
       {
         "title": "Precisione",
-        "text": "Ci concentriamo sulla precisione dimensionale e sulla puntualità"
+        "text": "Ci concentriamo sulla precisione dimensionale e sulla puntualità."
       },
       {
         "title": "Flessibilità",
@@ -155,7 +155,7 @@
       },
       {
         "title": "Controllo di qualità al 100%",
-        "text": "I nostri prodotti sono controllati nei nostri padiglioni dalla A alla Z"
+        "text": "I nostri prodotti sono controllati nei nostri padiglioni dalla A alla Z."
       }
     ]
   },

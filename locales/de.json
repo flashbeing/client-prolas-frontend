@@ -8,7 +8,7 @@
   "ourValues": {
     "titles": ["UNSERE WERTE", "UNSERE GESCHICHTE"],
     "descriptions": [
-      "Das Zusammenspiel von Tradition und Fortschritt sind Grundlage unseres Unternehmens. Neuste Technologien sind unser Werkzeug.",
+      "Das Zusammenspiel von Tradition und Fortschritt sind Grundlage unseres Unternehmens. Neueste Technologien sind unser Werkzeug.",
       "Unser generationenüberschreitender Familienbetrieb setzt seit der Gründung im Jahre 1964 auf solide Lösungen mit maximaler Präzision im Bereich Metallverarbeitung.",
       "Nach Übernahme und Neuausrichtung durch die Gebrüder Lageder 1990, erfolgte im Jahre 2020 die Abspaltung des Bereichs Blechverarbeitung mit Gründung der ProLas GmbH."
     ]
@@ -18,7 +18,7 @@
     "steps": [
       {
         "title": "Konzeption und 3D-Konstruktion",
-        "text": "Wir stehen für Dynamik und Professionalität. Auf Kundenwunsch entwickeln wir optimale Lösungen: CAD-unterstützte Konstruktionen von Bauteilen und Fertigprodukten sowie Optimierung und Anpassungen von bereits existenten Bauteilen und Geometrien sind unser Steckenpferd. Wir leben Innovation."
+        "text": "Wir stehen für Dynamik und Professionalität. Auf Kundenwunsch entwickeln wir optimale Lösungen: CAD-unterstützte Konstruktionen von Bauteilen und Fertigprodukten sowie Optimierung und Anpassung von bereits existenten Bauteilen und Geometrien sind unser Steckenpferd. Wir leben Innovation."
       },
       {
         "title": "Prototypenfertigung",
@@ -46,7 +46,7 @@
       },
       {
         "title": "Entgraten",
-        "text": "Bezeichnet das Abrunden der Kanten von Rohteilen mittels Bürsten und Schleifmaschine sowohl maschinell als auch manuell. Dieser Schritt dient zur Vermeidung von Verletzungen, zur Steigerung der Endqualität des Produktes als auch für die angenehmere Haptik der Produkte durch Abrundung der Innen- und Außenkanten.",
+        "text": "Bezeichnet das Abrunden der Innen- und Außenkanten von Rohteilen mittels Bürsten und Schleifmaschine, sowohl maschinell als auch manuell. Dieser Schritt dient zur Vermeidung von Verletzungen und zur Steigerung der Endqualität, aufgrund einer angenehmeren Haptik der Produkte.",
         "machines": ["Costa MSA2 CRC+S 1350", "Macchine a nastro abrasivo"]
       },
       {
@@ -56,7 +56,7 @@
       },
       {
         "title": "Zusammenbau",
-        "text": "Perfekte Umsetzung durch jahrelange Erfahrung: Wir bieten Zusammenbau als auch Bearbeitung der Einzelteile zu Fertig- bzw. Halbfertigprodukten je nach Kundenwunsch an."
+        "text": "Perfekte Umsetzung durch jahrelange Erfahrung: Wir führen zusätzliche Bearbeitungen der Einzelteile, sowie den Zusammenbau zu Fertig- bzw. Halbfertigprodukten je nach Kundenwunsch durch."
       },
       {
         "title": "Nachbearbeitung",
@@ -137,7 +137,7 @@
       },
       {
         "title": "Flexibilität",
-        "text": "Die familienähnlichen Betriebsstruktur macht uns flexibel und anpassungsfähig."
+        "text": "Die familienähnliche Betriebsstruktur macht uns flexibel und anpassungsfähig."
       },
       {
         "title": "Kreativität",
