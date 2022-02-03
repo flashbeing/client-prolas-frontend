@@ -72,7 +72,7 @@ export default {
       this.details = this.machines[machine].details
       setTimeout(() => {
         this.loading = false
-      }, 500)
+      }, 750)
     },
     getMachineImage() {
       return require(`~/assets/image/${this.machineSelected

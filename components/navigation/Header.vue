@@ -2,14 +2,14 @@
   <header :style="`height:${headerHeight}px;`">
     <div class="header-center">
       <nav class="desktop-nav">
-        <nuxt-link
+        <li
           v-for="item of menuItemsLeft"
           :key="item.path"
-          :to="{ path: item.path }"
-          @click.native="hideMenu"
+          class="clickable"
+          @click="linkClicked(item.path)"
         >
           {{ item.name }}
-        </nuxt-link>
+        </li>
         <nuxt-link
           :to="localePath('/')"
           tag="div"
@@ -17,14 +17,14 @@
           :style="`height:${logoHeight}px`"
           @click.native="hideMenu"
         ></nuxt-link>
-        <nuxt-link
+        <li
           v-for="item of menuItemsRight"
           :key="item.path"
-          :to="localePath(item.path)"
-          @click.native="hideMenu"
+          class="clickable"
+          @click="linkClicked(item.path)"
         >
           {{ item.name }}
-        </nuxt-link>
+        </li>
       </nav>
       <nav class="mobile-menu">
         <nuxt-link
@@ -48,17 +48,14 @@
         <div class="menu" :class="{ visible: isMenuOpened }">
           <div class="center relative h-full">
             <ul>
-              <nuxt-link
+              <li
                 v-for="item of menuItems"
                 :key="item.hash"
-                :to="{ path: item.path }"
                 class="clickable"
-                @click.native="hideMenu"
+                @click="linkClicked(item.path)"
               >
-                <li>
-                  {{ item.name }}
-                </li>
-              </nuxt-link>
+                {{ item.name }}
+              </li>
             </ul>
           </div>
         </div>
@@ -83,11 +80,11 @@ export default {
       return [
         {
           name: this.$t('header.whatWeDo'),
-          path: '#whatWeDo',
+          path: 'whatWeDo',
         },
         {
           name: this.$t('header.ourTech'),
-          path: '#ourTech',
+          path: 'ourTech',
         },
       ]
     },
@@ -95,11 +92,11 @@ export default {
       return [
         {
           name: this.$t('header.us'),
-          path: '#us',
+          path: 'us',
         },
         {
           name: this.$t('header.ourLocation'),
-          path: '#ourLocation',
+          path: 'ourLocation',
         },
       ]
     },
@@ -113,8 +110,16 @@ export default {
     }
   },
   methods: {
+    scrollToAnchor(hash) {
+      if (location.hash === '#' + hash) location.hash = ''
+      location.hash = '#' + hash
+    },
     toggleMenu() {
       this.isMenuOpened = !this.isMenuOpened
+    },
+    linkClicked(hash) {
+      this.hideMenu()
+      this.scrollToAnchor(hash)
     },
     hideMenu() {
       this.isMenuOpened = false

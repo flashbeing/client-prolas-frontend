@@ -3,7 +3,7 @@ const AVAILABLE_LANGUAGES = ['de', 'it']
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Prolas',
+    title: 'Prolas GmbH - Shaping Metal',
     htmlAttrs: {
       lang: 'de',
     },

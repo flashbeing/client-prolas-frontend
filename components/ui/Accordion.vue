@@ -53,7 +53,9 @@ export default {
     },
     scrollTo() {
       this.$store.commit('page/setMachineSelected', this.title)
-      this.$router.push({ path: this.anchor })
+      // this.$router.push({ path: this.anchor })
+      if (location.hash === '#' + this.anchor) location.hash = ''
+      location.hash = '#' + this.anchor
     },
   },
 }

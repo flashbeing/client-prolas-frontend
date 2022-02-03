@@ -33,6 +33,16 @@ svg {
   max-width: 600px;
 }
 
+.cookie {
+  @apply bg-secondary !important text-primary;
+
+  & .cookie-button {
+    @apply bg-transparent text-primary border-2 border-primary;
+
+    padding: 0.625em 3.125em;
+  }
+}
+
 @media only screen and (max-width: 980px) {
   .center {
     @apply w-auto;

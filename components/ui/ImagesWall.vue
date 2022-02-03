@@ -100,7 +100,7 @@ img {
 }
 
 .row {
-  @apply flex gap-3 flex-wrap;
+  @apply flex gap-3;
   & > img {
     @apply flex-1;
 
@@ -152,6 +152,8 @@ img {
   }
 
   .row {
+    @apply flex-wrap;
+
     & > img {
       max-width: 100%;
     }

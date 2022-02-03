@@ -14,7 +14,7 @@
         :title="m.name"
         :content="m.description"
         :right="right"
-        anchor="/#ourTech"
+        anchor="ourTech"
       />
     </div>
   </div>
