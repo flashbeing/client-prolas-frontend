@@ -11,8 +11,8 @@
       >
     </div>
     <div class="center company-details">
-      <span>Prolas GmbH</span>
-      <span>Gewerbezone 33 39053 Kardaun/Cornedo all‘Isarco</span>
+      <span>Prolas GmbH,</span>
+      <span>Gewerbezone 33, 39053 Kardaun/Cornedo all‘Isarco,</span>
       <span>MwST.: IT 03089220218 C.D.: 2H2LI53</span>
     </div>
     <client-only>
@@ -62,7 +62,7 @@ footer {
     }
   }
   & .company-details {
-    @apply text-base;
+    @apply text-sm text-center;
   }
   &::before {
     @apply absolute w-full bg-primary;
@@ -84,7 +84,7 @@ footer {
       }
     }
     & .company-details {
-      @apply flex flex-col gap-2 items-start text-sm;
+      @apply flex flex-col gap-2 items-start text-xs text-left;
       & > span {
         @apply block;
       }
