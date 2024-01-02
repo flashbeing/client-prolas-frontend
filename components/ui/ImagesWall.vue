@@ -1,20 +1,20 @@
 <template>
   <div class="image-wall-container">
     <img
-      :src="require('~/assets/image/images_wall_1_1.jpeg')"
+      :src="require('~/assets/image/images_wall_1_1.jpg')"
       :class="{ 'hidden-image': showImages[0] }"
     />
     <img
-      :src="require('~/assets/image/images_wall_1_2.jpeg')"
+      :src="require('~/assets/image/images_wall_1_2.jpg')"
       :class="{ 'hidden-image': !showImages[0] }"
     />
     <div class="row">
       <img
-        :src="require('~/assets/image/images_wall_2_1.jpeg')"
+        :src="require('~/assets/image/images_wall_2_1.jpg')"
         :class="{ 'hidden-image': showImages[1] }"
       />
       <img
-        :src="require('~/assets/image/images_wall_2_2.jpeg')"
+        :src="require('~/assets/image/images_wall_2_2.jpg')"
         :class="{ 'hidden-image': !showImages[1] }"
       />
       <div class="box-container box-container--blue">
@@ -43,11 +43,11 @@
         </div>
       </div>
       <img
-        :src="require('~/assets/image/images_wall_3_1.jpeg')"
+        :src="require('~/assets/image/images_wall_3_1.jpg')"
         :class="{ 'hidden-image': showImages[2] }"
       />
       <img
-        :src="require('~/assets/image/images_wall_3_2.jpeg')"
+        :src="require('~/assets/image/images_wall_3_2.jpg')"
         :class="{ 'hidden-image': !showImages[2] }"
       />
     </div>
@@ -125,7 +125,7 @@ img {
 }
 
 .box-container--bg-image {
-  background-image: url('~/assets/image/metal_pieces-min.jpeg');
+  background-image: url('~/assets/image/metal_pieces-min.jpg');
   background-size: cover;
 }
 

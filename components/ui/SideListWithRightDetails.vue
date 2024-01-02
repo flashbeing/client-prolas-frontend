@@ -77,7 +77,7 @@ export default {
     getMachineImage() {
       return require(`~/assets/image/${this.machineSelected
         .split(' ')
-        .join('_')}-min.jpeg`)
+        .join('_')}-min.jpg`)
     },
   },
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="about-us-container">
     <div class="image-container">
-      <img src="~/assets/image/TruBend_vertical-min.jpeg" alt="" />
+      <img src="~/assets/image/TruBend_vertical-min.jpg" alt="" />
     </div>
     <div class="text-container">
       <div class="text-wrapper">

@@ -55,6 +55,10 @@
         "machines": ["Costa MSA2 CRC+S 1350"]
       },
       {
+        "title": "Inserimento di elementi di fissaggio",
+        "text": "La pressa completamente idraulica garantisce un'applicazione corretta di elementi di fissaggio di ogni tipo. Grazie al controllo automatico della qualità e alla rapida gestione di parti singole (applicazione simultanea di fino a 4 diversi elementi), offriamo la massima qualità ed efficienza. Affidatevi alla nostra esperienza per soluzioni di fissaggio di prim'ordine e affidabili."
+      },
+      {
         "title": "Montaggio",
         "text": " implementazione perfetta grazie ad anni di esperienza. Offriamo il montaggio e la lavorazione delle singole parti in prodotti finiti o semilavorati secondo le esigenze del cliente."
       },
@@ -92,7 +96,7 @@
         "Macchina piegatrice di Trumpf",
         "Anno di fabbricazione: 2000",
         "Max. Lunghezza: 3000mm",
-        "Forza: 130KN",
+        "Forza: 1300kN",
         "Max. Spessore del foglio: 6mm sulla lunghezza totale",
         "Strumenti: uso esclusivo di strumenti di piegatura originali Trumpf"
       ]
@@ -103,7 +107,7 @@
         "Macchina piegatrice di Trumpf",
         "Anno di fabbricazione: 2016",
         "Max. Lunghezza: 4000m",
-        "Forza: 320KN",
+        "Forza: 3200kN",
         "Max. Spessore del foglio: 10mm sulla lunghezza totale",
         "Strumenti: uso esclusivo di strumenti di piegatura originali Trumpf",
         "Extra: aiuto alla piegatura per la piegatura di parti complesse, navetta portautensili come magazzino e aiuto al caricamento delle matrici di punzonatura e piegatura"
@@ -117,18 +121,32 @@
         "Max. Dimensioni: 4000x1350x140mm",
         "Materiali: Inox e alluminio"
       ]
+    },
+    "TruBend 7050": {
+      "name": "TruBend 7050",
+      "details": [
+        "Piegaferro della Trumpf",
+        "Anno di costruzione: 2022",
+        "Lunghezza massima: 1530mm",
+        "Forza: 500kN",
+        "Spessore massimo della lamiera: 4mm su lunghezza totale",
+        "Utensili: utilizzo esclusivo di utensili piegatori originali Trumpf"
+      ]
+    },
+    "HAEGER OneTouch": {
+      "name": "HAEGER OneTouch",
+      "details": [
+        "Pressa per l'inserimento di elementi di fissaggio di ogni tipo",
+        "Anno di costruzione: 2022",
+        "Forza: 50 kN",
+        "Elementi di fissaggio in acciaio da costruzione e acciaio inossidabile fino a M8",
+        "Adatta per parti piatte ad alto volume con flange fino a 3\"",
+        "Inserimento automatico di 4 diversi elementi di fissaggio per pezzo",
+        "Extra: controllo completo della lunghezza del fissaggio, riconoscimento degli elementi di fissaggio e assegnazione dell'inserimento"
+      ]
     }
   },
-  "unavailableMachines": [
-    {
-      "name": "TruBend 7050 (dal 2022)",
-      "details": ["Macchina piegatrice"]
-    },
-    {
-      "name": "HAEGER 824 One Touch4e (dal 2022)",
-      "details": ["Macchina pressatrice"]
-    }
-  ],
+  "unavailableMachines": [],
   "strengths": {
     "first": [
       {

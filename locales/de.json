@@ -55,6 +55,10 @@
         "machines": ["Costa MSA2 CRC+S 1350"]
       },
       {
+        "title": "Einpressen von Befestigungselementen",
+        "text": "Die vollhydraulische Einpressmaschine garantiert eine fachgerechte Anbringung von Befestigungselementen aller Art. Durch automatische Qualitätskontrolle und schnelles Single Part Handling (gleichzeitige Anbringung von bis zu 4 unterschiedlichen Elementen) bieten wir damit maximale Qualität und effiziente Abarbeitung. Vertrauen Sie auf unsere Expertise für erstklassige, zuverlässige Befestigungslösungen."
+      },
+      {
         "title": "Zusammenbau",
         "text": "Perfekte Umsetzung durch jahrelange Erfahrung: Wir führen zusätzliche Bearbeitungen der Einzelteile, sowie den Zusammenbau zu Fertig- bzw. Halbfertigprodukten je nach Kundenwunsch durch."
       },
@@ -92,7 +96,7 @@
         "Biegemaschine von Trumpf",
         "Baujahr: 2000",
         "Max. Länge: 3000mm",
-        "Kraft: 130KN",
+        "Kraft: 1300kN",
         "Max. Blechstärke: 6mm auf Gesamtlänge",
         "Werkzeuge: ausschließliche Verwendung von original Trumpf-Biegewerkzeugen"
       ]
@@ -103,10 +107,10 @@
         "Biegemaschine von Trumpf",
         "Baujahr: 2016",
         "Max. Länge: 4000m",
-        "Kraft: 320KN",
+        "Kraft: 3200kN",
         "Max. Blechstärke: 10mm auf Gesamtlänge",
         "Werkzeuge: ausschließliche Verwendung von original Trumpf-Biegewerkzeugen",
-        "Extras: Biegehilfe zum Biegen von komplexen Teilen, oolshuttle als Magazin und Beladehilfe der Stempel- und Biegematrizen"
+        "Extras: Biegehilfe zum Biegen von komplexen Teilen, Toolshuttle als Magazin und Beladehilfe der Stempel- und Biegematrizen"
       ]
     },
     "Costa MSA2 CRC+S 1350": {
@@ -117,18 +121,32 @@
         "Max. Abmessungen: 4000x1350x140mm",
         "Materialien: Inox und Aluminium"
       ]
+    },
+    "TruBend 7050": {
+      "name": "TruBend 7050",
+      "details": [
+        "Biegemaschine von Trumpf",
+        "Baujahr: 2022",
+        "Max. Länge: 1530mm",
+        "Kraft: 500kN",
+        "Max. Blechstärke: 4mm auf Gesamtlänge",
+        "Werkzeuge: ausschließliche Verwendung von original Trumpf-Biegewerkzeugen"
+      ]
+    },
+    "HAEGER OneTouch": {
+      "name": "HAEGER OneTouch",
+      "details": [
+        "Einpressmaschine für Befestigungselemente aller Art",
+        "Baujahr: 2022",
+        "Kraft: 50 kN",
+        "Verbindungselementen aus Baustahl und Edelstahl bis M8",
+        "Geeignet für großvolumige Flachteile mit Flanschen unter 3\"",
+        "Automatische Einpressung von 4 unterschiedliche Befestigungselemente pro Teil",
+        "Extra: vollständige Qualitätskontrolle der Befestigungslänge, Befestigungselementerkennung und Einfügezuordnung"
+      ]
     }
   },
-  "unavailableMachines": [
-    {
-      "name": "TruBend 7050 (ab 2022)",
-      "details": ["Biegemaschine"]
-    },
-    {
-      "name": "HAEGER 824 One Touch4e (ab 2022)",
-      "details": ["Einpressmaschine"]
-    }
-  ],
+  "unavailableMachines": [],
   "strengths": {
     "first": [
       {
