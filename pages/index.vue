@@ -74,8 +74,7 @@ export default {
           url: require('~/assets/image/Costa_MSA2_CRC+S_1350-min.jpg'),
         },
         {
-          isImage: true,
-          url: require('~/assets/image/Costa_MSA2_CRC+S_1350-min.jpg'),
+          url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/v2/satinieren.m4v',
         },
         {
           url: 'https://codeworks-clients-public.s3.eu-west-1.amazonaws.com/prolas/videos/v2/zusammenbau.m4v',
