@@ -56,7 +56,8 @@
       },
       {
         "title": "Einpressen von Befestigungselementen",
-        "text": "Die vollhydraulische Einpressmaschine garantiert eine fachgerechte Anbringung von Befestigungselementen aller Art. Durch automatische Qualitätskontrolle und schnelles Single Part Handling (gleichzeitige Anbringung von bis zu 4 unterschiedlichen Elementen) bieten wir damit maximale Qualität und effiziente Abarbeitung. Vertrauen Sie auf unsere Expertise für erstklassige, zuverlässige Befestigungslösungen."
+        "text": "Die vollhydraulische Einpressmaschine garantiert eine fachgerechte Anbringung von Befestigungselementen aller Art. Durch automatische Qualitätskontrolle und gleichzeitige Anbringung von bis zu 4 unterschiedlichen Elementen bieten wir damit maximale Qualität und effiziente Abarbeitung.",
+        "machines": ["HAEGER OneTouch"]
       },
       {
         "title": "Zusammenbau",
@@ -113,15 +114,6 @@
         "Extras: Biegehilfe zum Biegen von komplexen Teilen, Toolshuttle als Magazin und Beladehilfe der Stempel- und Biegematrizen"
       ]
     },
-    "Costa MSA2 CRC+S 1350": {
-      "name": "Costa MSA2 CRC+S 1350",
-      "details": [
-        "Entgratungs- und Satiniermaschine von Costa Levigatrici",
-        "Baujahr: 2012",
-        "Max. Abmessungen: 4000x1350x140mm",
-        "Materialien: Inox und Aluminium"
-      ]
-    },
     "TruBend 7050": {
       "name": "TruBend 7050",
       "details": [
@@ -131,6 +123,15 @@
         "Kraft: 500kN",
         "Max. Blechstärke: 4mm auf Gesamtlänge",
         "Werkzeuge: ausschließliche Verwendung von original Trumpf-Biegewerkzeugen"
+      ]
+    },
+    "Costa MSA2 CRC+S 1350": {
+      "name": "Costa MSA2 CRC+S 1350",
+      "details": [
+        "Entgratungs- und Satiniermaschine von Costa Levigatrici",
+        "Baujahr: 2012",
+        "Max. Abmessungen: 4000x1350x140mm",
+        "Materialien: Inox und Aluminium"
       ]
     },
     "HAEGER OneTouch": {

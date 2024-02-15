@@ -56,7 +56,8 @@
       },
       {
         "title": "Inserimento di elementi di fissaggio",
-        "text": "La pressa completamente idraulica garantisce un'applicazione corretta di elementi di fissaggio di ogni tipo. Grazie al controllo automatico della qualità e alla rapida gestione di parti singole (applicazione simultanea di fino a 4 diversi elementi), offriamo la massima qualità ed efficienza. Affidatevi alla nostra esperienza per soluzioni di fissaggio di prim'ordine e affidabili."
+        "text": "La pressa completamente idraulica garantisce un'applicazione corretta di elementi di fissaggio di ogni tipo. Grazie al controllo automatico della qualità e alla rapida gestione di parti singole (applicazione simultanea di fino a 4 diversi elementi), offriamo la massima qualità ed efficienza. Affidatevi alla nostra esperienza per soluzioni di fissaggio di prim'ordine e affidabili.",
+        "machines": ["HAEGER OneTouch"]
       },
       {
         "title": "Montaggio",
@@ -113,15 +114,6 @@
         "Extra: aiuto alla piegatura per la piegatura di parti complesse, navetta portautensili come magazzino e aiuto al caricamento delle matrici di punzonatura e piegatura"
       ]
     },
-    "Costa MSA2 CRC+S 1350": {
-      "name": "Costa MSA2 CRC+S 1350",
-      "details": [
-        "Sbavatrice e satinatrice Costa Levigatrici",
-        "Anno di fabbricazione: 2012",
-        "Max. Dimensioni: 4000x1350x140mm",
-        "Materiali: Inox e alluminio"
-      ]
-    },
     "TruBend 7050": {
       "name": "TruBend 7050",
       "details": [
@@ -131,6 +123,15 @@
         "Forza: 500kN",
         "Spessore massimo della lamiera: 4mm su lunghezza totale",
         "Utensili: utilizzo esclusivo di utensili piegatori originali Trumpf"
+      ]
+    },
+    "Costa MSA2 CRC+S 1350": {
+      "name": "Costa MSA2 CRC+S 1350",
+      "details": [
+        "Sbavatrice e satinatrice Costa Levigatrici",
+        "Anno di fabbricazione: 2012",
+        "Max. Dimensioni: 4000x1350x140mm",
+        "Materiali: Inox e alluminio"
       ]
     },
     "HAEGER OneTouch": {
