@@ -60,24 +60,35 @@ export default {
       return this.$t('unavailableMachines')
     },
   },
-  created() {
-    this.details = this.machines[this.machineSelected].details
-    this.image = this.getMachineImage()
+
+  watch: {
+    machineSelected() {
+      this.setCurrentSectionDetails()
+    },
   },
+
+  created() {
+    this.setCurrentSectionDetails(true)
+  },
+
   methods: {
     setMachineSelected(machine) {
-      this.loading = true
       this.$store.commit('page/setMachineSelected', machine)
-      this.image = this.getMachineImage()
-      this.details = this.machines[machine].details
-      setTimeout(() => {
-        this.loading = false
-      }, 750)
     },
+
     getMachineImage() {
       return require(`~/assets/image/${this.machineSelected
         .split(' ')
         .join('_')}-min.jpg`)
+    },
+
+    setCurrentSectionDetails(isFirstLoad) {
+      // this.loading = !isFirstLoad // NOTE: loading status was removed due to bad UX behavior
+      this.image = this.getMachineImage()
+      this.details = this.machines[this.machineSelected].details
+      /* setTimeout(() => {
+        this.loading = false
+      }, 750) */
     },
   },
 }
