@@ -9,6 +9,11 @@
           {{ $t('footer.jobs') }}</a
         ></span
       >
+      <span
+        ><NuxtLink :to="localePath('/privacy')"
+          >Cookie & Privacy</NuxtLink
+        ></span
+      >
     </div>
     <div class="center company-details">
       <span>Prolas GmbH,</span>
@@ -49,7 +54,7 @@ footer {
   @apply grid gap-8 bg-primary py-32 relative text-white;
 
   & .row {
-    @apply flex justify-center gap-32  text-xl;
+    @apply flex justify-center gap-6  text-base;
     & > span {
       @apply flex items-center gap-4;
       & > a {
@@ -65,7 +70,7 @@ footer {
     }
   }
   & .company-details {
-    @apply text-sm text-center;
+    @apply text-xs text-center;
   }
   &::before {
     @apply absolute w-full bg-primary;
@@ -81,13 +86,14 @@ footer {
     @apply gap-12 py-12;
 
     & .row {
-      @apply flex-col items-center gap-12 text-base;
+      @apply flex-col items-center gap-4 text-base;
       & > span {
         @apply flex gap-4;
       }
     }
+
     & .company-details {
-      @apply flex flex-col gap-2 items-start text-xs text-left;
+      @apply flex flex-col gap-2 items-center justify-center text-xs;
       & > span {
         @apply block;
       }

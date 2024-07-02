@@ -5,12 +5,14 @@
         <h2 class="cookie-title">{{ $t('footer.cookieTitle') }}</h2>
         <p class="cookie-description">
           {{ $t('footer.cookieDescription') }}
-          <NuxtLink to="/privacy" class="cookie-policy">Cookie Policy</NuxtLink>
+          <NuxtLink :to="localePath('/privacy')" class="cookie-policy"
+            >Cookie & Privacy Policy</NuxtLink
+          >
         </p>
       </div>
       <div class="cookie-grant">
         <Checkbox :checked="pixel" @change="updatePixel" />
-        <p>Meta's Pixel</p>
+        <p>Meta Pixel</p>
       </div>
       <div class="cookie-btn-ct">
         <Button

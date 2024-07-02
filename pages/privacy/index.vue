@@ -126,7 +126,7 @@
 
           <h2>Utilizzo dei Cookie</h2>
           <p>
-            Questo sito web non utilizza cookie di profilazione e utilizza un
+            Questo sito web utilizza cookie di profilazione e utilizza un
             singolo cookie tecnico chiamato "i18n_redirected". Lo scopo di
             questo cookie è ricordare la preferenza di lingua dell'utente e
             reindirizzarlo alla versione appropriata del sito web.
@@ -208,11 +208,10 @@
 
           <h2>Verwendung von Cookies</h2>
           <p>
-            Diese Website verwendet keine Profiling-Cookies und nur ein
-            technisches Cookie namens "i18n_redirected". Der Zweck dieses
-            Cookies besteht darin, die Spracheinstellung des Benutzers zu
-            speichern und ihn zur entsprechenden Version der Website
-            weiterzuleiten.
+            Diese Website verwendet Profiling-Cookies und nur ein technisches
+            Cookie namens "i18n_redirected". Der Zweck dieses Cookies besteht
+            darin, die Spracheinstellung des Benutzers zu speichern und ihn zur
+            entsprechenden Version der Website weiterzuleiten.
           </p>
 
           <h2>Websites von Drittanbietern</h2>
