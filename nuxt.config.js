@@ -28,6 +28,7 @@ export default {
     '@/plugins/google-maps',
     { src: '@/plugins/vue-notification', ssr: false },
     '@/plugins/notify',
+    './plugins/vue-fbq.js',
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

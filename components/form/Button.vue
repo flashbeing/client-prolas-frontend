@@ -84,7 +84,7 @@ export default {
 
 <style lang="postcss" scoped>
 .button {
-  @apply relative inline-block rounded-lg px-6 text-base font-semibold select-none;
+  @apply relative flex items-center justify-center rounded-lg px-6 text-base font-semibold select-none flex-grow;
 
   min-width: 50px;
   height: 50px;
@@ -107,7 +107,7 @@ export default {
     @apply bg-primary text-white;
 
     &:hover {
-      @apply bg-primary-hover;
+      @apply bg-primary opacity-80;
     }
   }
 

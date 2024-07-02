@@ -96,6 +96,7 @@ export default {
 <style lang="postcss" scoped>
 main {
   margin-top: 60px;
+  overflow-x: hidden;
 
   & > .section {
     @apply my-32;

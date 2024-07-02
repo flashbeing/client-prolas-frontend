@@ -15,14 +15,17 @@
       <span>Gewerbezone 33, 39053 Kardaun/Cornedo all‘Isarco,</span>
       <span>MwST.: IT 03089220218 C.D.: 2H2LI53</span>
     </div>
-    <client-only>
-      <cookie-law
+    <!-- <client-only>
+     cookie-law
         theme="dark-lime"
         :message="$t('footer.cookieTerms')"
         button-class="cookie-button"
         button-text="Ok"
         class="cookie"
       ></cookie-law>
+    </client-only> -->
+    <client-only>
+      <CookieBanner />
     </client-only>
   </footer>
 </template>
@@ -36,7 +39,7 @@ export default {
     Phone,
     Email,
 
-    CookieLaw: () => (process.client ? import('vue-cookie-law') : null),
+    // CookieLaw: () => (process.client ? import('vue-cookie-law') : null),
   },
 }
 </script>

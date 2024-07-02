@@ -186,6 +186,18 @@
     "email": "laser@prolas.it - info@prolas.it",
     "pec": "Indirizzo PEC: info@pec.prolas.it",
     "jobs": "Jobs",
-    "cookieTerms": "Usiamo cookie tecnici per le preferenze della lingua utente"
+    "cookieTerms": "Usiamo cookie tecnici per le preferenze della lingua utente",
+
+    "cookieTitle": "Vuoi consentirci di utilizzare i cookie?",
+    "cookieDescription": "Utilizziamo i cookie per ottimizzare la tua esperienza di navigazione.",
+    "cookieAccept": "Consenti selezionati",
+    "cookieDeclineAll": "Rifiuta tutti"
+  },
+
+  "contacts": {
+    "companyLegalName": "Prolas GmbH",
+    "legalStreet": "Gewerbezone 33, 39053 Kardaun/Cornedo all'Isarco",
+    "legalMail": "info{at}pec.prolas.it",
+    "phone": "0471 052460"
   }
 }
