@@ -265,7 +265,7 @@ export default {
       if (process.client) {
         const path = window.location.href.split('/')
         path.pop()
-        return path.join('')
+        return path.join('/')
       }
       return ''
     },
