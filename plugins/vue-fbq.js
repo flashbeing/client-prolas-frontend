@@ -1,7 +1,7 @@
 // vue-fbq.ts
 
 import Vue from 'vue'
-import VueLIC from '../local_modules/vue-fbq-main/src/index.esm'
+import VueLIC from '../local_modules/cookie/src/index.js'
 
 /**
  * vue-fbq plugin

@@ -38,9 +38,8 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import Cookie from '@/assets/icon/cookie.svg'
-import { bootstrap as loadFbq } from '../../local_modules/vue-fbq-main/src/index.esm'
+import { bootstrap } from '../../local_modules/cookie/src/index.js'
 
 export default {
   components: {
@@ -91,9 +90,7 @@ export default {
       localStorage.setItem('banner-visible', 'false')
     },
     opInCookie() {
-      loadFbq().then(() => {
-        Vue.$fbq.optIn()
-      })
+      bootstrap()
     },
   },
 }
